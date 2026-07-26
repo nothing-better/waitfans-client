@@ -1,0 +1,1963 @@
+{
+  "assets": [
+    {
+      "contentType": "image/avif",
+      "id": "4152ad2dc02cb823",
+      "kind": "image",
+      "name": "cc634ec77d2755641d5ed3f392c9b7e065a88aae.png@3840w_360h_1c.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\4152ad2dc02cb823.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/cc634ec77d2755641d5ed3f392c9b7e065a88aae.png@3840w_360h_1c.avif?mirror_report_banner=1"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "25730189dbdc345f",
+      "kind": "image",
+      "name": "56ec0ca6c492c3fe3a3bcc84a605deee96e62c16.png@976w_550h_!web-home-carousel-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\25730189dbdc345f.avif",
+      "url": "https://i0.hdslb.com/bfs/banner/56ec0ca6c492c3fe3a3bcc84a605deee96e62c16.png@976w_550h_!web-home-carousel-cover.avif?mirror_report_swipe=1"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "0f80278b272db294",
+      "kind": "image",
+      "name": "583be1a8ac95e0f1dad6736d33af7152096dc761.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0f80278b272db294.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/583be1a8ac95e0f1dad6736d33af7152096dc761.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "194bc8a7f9e9fc3c",
+      "kind": "image",
+      "name": "4df2808e5c8b2067950ecfb4f8a49e2afd7804df.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\194bc8a7f9e9fc3c.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/4df2808e5c8b2067950ecfb4f8a49e2afd7804df.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "3730659562a635dd",
+      "kind": "image",
+      "name": "9d0ad189d906750c1aa47f1814efa3e88229de42.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\3730659562a635dd.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/9d0ad189d906750c1aa47f1814efa3e88229de42.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "9651e56372563ddf",
+      "kind": "image",
+      "name": "4444627b57ca47ef8091492e32d3393b.png@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9651e56372563ddf.avif",
+      "url": "https://i0.hdslb.com/bfs/sycp/sanlian/image/4444627b57ca47ef8091492e32d3393b.png@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "431f1ddd6a3d8ce8",
+      "kind": "image",
+      "name": "2a73799cec7aee61db6a2efcc413f1b2a5c2ef4b.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\431f1ddd6a3d8ce8.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/2a73799cec7aee61db6a2efcc413f1b2a5c2ef4b.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "352da0725663e216",
+      "kind": "image",
+      "name": "d15c27a6d9ad45dcaf89f4d903d6b358.jpeg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\352da0725663e216.avif",
+      "url": "https://i0.hdslb.com/bfs/sycp/sanlian/image/d15c27a6d9ad45dcaf89f4d903d6b358.jpeg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "568d4d2e83065ad3",
+      "kind": "image",
+      "name": "7b1d069b33d56b96aaaf8ca9d1ae30b38085c2b5.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\568d4d2e83065ad3.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/7b1d069b33d56b96aaaf8ca9d1ae30b38085c2b5.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "e0e7fb6cb0cb6df9",
+      "kind": "image",
+      "name": "0cdea561381348db291789955fff7b04ca9169ae.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e0e7fb6cb0cb6df9.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/0cdea561381348db291789955fff7b04ca9169ae.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "856a8b604c505e47",
+      "kind": "image",
+      "name": "d13e99d382275b5b7497eaa4b563bf0f5f71ff5d.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\856a8b604c505e47.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/d13e99d382275b5b7497eaa4b563bf0f5f71ff5d.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "322c62407dddf138",
+      "kind": "image",
+      "name": "4e5a6fd4a3b923e5de9ebec27bed16f8260dc110.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\322c62407dddf138.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/4e5a6fd4a3b923e5de9ebec27bed16f8260dc110.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/png",
+      "id": "b8d75a5b12be6169",
+      "kind": "image",
+      "name": "87a5d03581e326f4f818cab3212ce471d1f6a064.png",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b8d75a5b12be6169.png",
+      "url": "https://i0.hdslb.com/bfs/archive/87a5d03581e326f4f818cab3212ce471d1f6a064.png"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "1ee5e6839982ef47",
+      "kind": "image",
+      "name": "bfb2f1736661097e5fb1039d2bef19cf6f37e167.png@976w_550h_!web-home-carousel-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\1ee5e6839982ef47.avif",
+      "url": "https://i0.hdslb.com/bfs/banner/bfb2f1736661097e5fb1039d2bef19cf6f37e167.png@976w_550h_!web-home-carousel-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "33e4812a979891c9",
+      "kind": "image",
+      "name": "d96826ff1529c39e01a17fd325060d32.jpg@976w_550h_!web-home-carousel-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\33e4812a979891c9.avif",
+      "url": "https://i0.hdslb.com/bfs/sycp_brand/creative_img/202607/d96826ff1529c39e01a17fd325060d32.jpg@976w_550h_!web-home-carousel-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "371cadd4ec071563",
+      "kind": "image",
+      "name": "1251cb56cb70baabe57e7503978c464a.jpg@976w_550h_!web-home-carousel-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\371cadd4ec071563.avif",
+      "url": "https://i0.hdslb.com/bfs/sycp_brand/creative_img/202607/1251cb56cb70baabe57e7503978c464a.jpg@976w_550h_!web-home-carousel-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "53557e1f70f25688",
+      "kind": "image",
+      "name": "20720841cf5484cd0c496464ead128b4c7904295.png@976w_550h_!web-home-carousel-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\53557e1f70f25688.avif",
+      "url": "https://i0.hdslb.com/bfs/banner/20720841cf5484cd0c496464ead128b4c7904295.png@976w_550h_!web-home-carousel-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "5caf4f362292cf31",
+      "kind": "image",
+      "name": "f8d01474c68241dad5046ee0bb130b886f1c2c37.png@976w_550h_!web-home-carousel-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\5caf4f362292cf31.avif",
+      "url": "https://i0.hdslb.com/bfs/banner/f8d01474c68241dad5046ee0bb130b886f1c2c37.png@976w_550h_!web-home-carousel-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "958f4a15f618892d",
+      "kind": "image",
+      "name": "be35490f3eeaac7a52b1096e8606bf3bbc7584f5.jpg@976w_550h_!web-home-carousel-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\958f4a15f618892d.avif",
+      "url": "https://i0.hdslb.com/bfs/banner/be35490f3eeaac7a52b1096e8606bf3bbc7584f5.jpg@976w_550h_!web-home-carousel-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "e2e0d8b3366e1763",
+      "kind": "image",
+      "name": "3fe6806101f1c9769c9606e5646ada1450efd72f.png@976w_550h_!web-home-carousel-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e2e0d8b3366e1763.avif",
+      "url": "https://i0.hdslb.com/bfs/banner/3fe6806101f1c9769c9606e5646ada1450efd72f.png@976w_550h_!web-home-carousel-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "7844c834e785f16d",
+      "kind": "image",
+      "name": "cab5e897bfe2ef76179d8bb98653999038fc22bd.png@976w_550h_!web-home-carousel-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\7844c834e785f16d.avif",
+      "url": "https://i0.hdslb.com/bfs/banner/cab5e897bfe2ef76179d8bb98653999038fc22bd.png@976w_550h_!web-home-carousel-cover.avif"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "f47414be05da6a55",
+      "kind": "image",
+      "name": "wlpip-playing-active.gif@48w_48h.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f47414be05da6a55.avif",
+      "url": "https://i0.hdslb.com/bfs/static/jinkela/long/images/wlpip-playing-active.gif@48w_48h.avif"
+    },
+    {
+      "contentType": "image/png",
+      "id": "2b2e9e6bf7558274",
+      "kind": "image",
+      "name": "421c6009df62eded367f617c28634be3c832aae0.png",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2b2e9e6bf7558274.png",
+      "url": "https://i0.hdslb.com/bfs/banner/421c6009df62eded367f617c28634be3c832aae0.png"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "4042d525e89f54dc",
+      "kind": "image",
+      "name": "7ba90052bb0a7d52ff2e2651c58325176823dab7.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\4042d525e89f54dc.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/7ba90052bb0a7d52ff2e2651c58325176823dab7.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "ff35308d8d91df53",
+      "kind": "image",
+      "name": "345b6e0fe3bcce70b4dda85984e6bd2e989ed383.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\ff35308d8d91df53.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/345b6e0fe3bcce70b4dda85984e6bd2e989ed383.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "c00df0434613a45f",
+      "kind": "image",
+      "name": "943d6df51d9698d2bbccfd1420a91e42c0bdb8ce.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\c00df0434613a45f.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/943d6df51d9698d2bbccfd1420a91e42c0bdb8ce.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "b642d7ef69ef7512",
+      "kind": "image",
+      "name": "7df8b2e7038b224ce684694d05e55ac537534f97.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b642d7ef69ef7512.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/7df8b2e7038b224ce684694d05e55ac537534f97.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "9ef60b6b43d55539",
+      "kind": "image",
+      "name": "d3a3efde2411a0a79421ca9e7a7fa5ffa6a377e8.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9ef60b6b43d55539.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/d3a3efde2411a0a79421ca9e7a7fa5ffa6a377e8.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "352e7d3edd86bbb0",
+      "kind": "image",
+      "name": "d6f0810cff9d297fb5de5dcd474b1303cc8efc56.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\352e7d3edd86bbb0.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/d6f0810cff9d297fb5de5dcd474b1303cc8efc56.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "47e18fa8f5ee36b8",
+      "kind": "image",
+      "name": "e3442b0c6d5b098a0577ae9a52fe3f862e253457.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\47e18fa8f5ee36b8.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/e3442b0c6d5b098a0577ae9a52fe3f862e253457.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "505af14d19ac9019",
+      "kind": "image",
+      "name": "b45d1213022a666a43a8a826a05ba449ca14f5ae.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\505af14d19ac9019.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/b45d1213022a666a43a8a826a05ba449ca14f5ae.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "7fc340e4a8f4db1b",
+      "kind": "image",
+      "name": "fe1d49a21d9715906fd580a09f5dab5a4d8762b9.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\7fc340e4a8f4db1b.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/fe1d49a21d9715906fd580a09f5dab5a4d8762b9.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "7d11183b0adb8e50",
+      "kind": "image",
+      "name": "aaed1e390b9cd7a7cf04da45cae135856b66df8f.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\7d11183b0adb8e50.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/aaed1e390b9cd7a7cf04da45cae135856b66df8f.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "b3b381fc22348e69",
+      "kind": "image",
+      "name": "2b343db84d1754f9ad69a761d1a0043be367b134.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b3b381fc22348e69.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/2b343db84d1754f9ad69a761d1a0043be367b134.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "5df4615929a52dad",
+      "kind": "image",
+      "name": "3a951ea0bd0b2d1c7972f06fd087efdeef037094.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\5df4615929a52dad.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/3a951ea0bd0b2d1c7972f06fd087efdeef037094.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "0f607185176f6414",
+      "kind": "image",
+      "name": "16a4c20e2961a5b44ef84d93ddc52c99f7010098.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0f607185176f6414.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/16a4c20e2961a5b44ef84d93ddc52c99f7010098.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "2e49d799f6989555",
+      "kind": "image",
+      "name": "86b62f4fb731a12e50450fe3e42db9b156c868fb.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2e49d799f6989555.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/86b62f4fb731a12e50450fe3e42db9b156c868fb.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "8679960af2116541",
+      "kind": "image",
+      "name": "ba7e7f012036d1249eca78ae542733e577e4f967.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\8679960af2116541.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/ba7e7f012036d1249eca78ae542733e577e4f967.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "fb50c67ef4415cf2",
+      "kind": "image",
+      "name": "9e3cce6670857a16e82e9d8ec4ce5fdf42eee0c7.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\fb50c67ef4415cf2.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/9e3cce6670857a16e82e9d8ec4ce5fdf42eee0c7.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "84e285b3993e855e",
+      "kind": "image",
+      "name": "e37c55a1af51dd92494a45beecce6ef2a9b53376.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\84e285b3993e855e.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/e37c55a1af51dd92494a45beecce6ef2a9b53376.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "7ccc62f99f9d4855",
+      "kind": "image",
+      "name": "047dbf50c727274d4ce3c661da05817849bf9ed5.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\7ccc62f99f9d4855.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/047dbf50c727274d4ce3c661da05817849bf9ed5.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "049acf12db63f825",
+      "kind": "image",
+      "name": "e1854d407c84a2d3945c9a3be469088ad609f419.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\049acf12db63f825.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/e1854d407c84a2d3945c9a3be469088ad609f419.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "00ff4da0921f013f",
+      "kind": "image",
+      "name": "297bf9dcb49425d3a82ace6344ee6e5c9ea5f024.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\00ff4da0921f013f.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/297bf9dcb49425d3a82ace6344ee6e5c9ea5f024.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "e367660035e9aae8",
+      "kind": "image",
+      "name": "7d88d35026b2ea610161b96140e5be87c9ccbcad.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e367660035e9aae8.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/7d88d35026b2ea610161b96140e5be87c9ccbcad.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "e49fe09b6943b331",
+      "kind": "image",
+      "name": "ff94ad93d5408a0c69d5193857233c42b1b10b41.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e49fe09b6943b331.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/ff94ad93d5408a0c69d5193857233c42b1b10b41.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "4230e3da280e3854",
+      "kind": "image",
+      "name": "ad9c11a699e68a8359dff42510f50068ae044245.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\4230e3da280e3854.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/ad9c11a699e68a8359dff42510f50068ae044245.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "9ec2e7c2a27bf265",
+      "kind": "image",
+      "name": "039d4f612147dbc315d4d75f0662c2bd0747559c.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9ec2e7c2a27bf265.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/039d4f612147dbc315d4d75f0662c2bd0747559c.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "a1b98cdb8356d6bf",
+      "kind": "image",
+      "name": "ebdf8eb6f2bbcf8f45e77e1b481ef955274451d5.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a1b98cdb8356d6bf.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/ebdf8eb6f2bbcf8f45e77e1b481ef955274451d5.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "f1142f9ad1e10df0",
+      "kind": "image",
+      "name": "ef3ff7abf1330d4cfb4897390a08ca718c37dc76.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f1142f9ad1e10df0.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/ef3ff7abf1330d4cfb4897390a08ca718c37dc76.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "1c9a16f3f754bbdc",
+      "kind": "image",
+      "name": "457ee6eb3e494f6151342e13ff21f4241312f770.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\1c9a16f3f754bbdc.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/457ee6eb3e494f6151342e13ff21f4241312f770.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "9b53d566174cab04",
+      "kind": "image",
+      "name": "b3a1001bc64e2a14f35fbb47d791993732f67367.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9b53d566174cab04.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/b3a1001bc64e2a14f35fbb47d791993732f67367.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "70bf8a4c1a422931",
+      "kind": "image",
+      "name": "0099698cfeea68b59a323f7c1248df6a7485a045.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\70bf8a4c1a422931.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/0099698cfeea68b59a323f7c1248df6a7485a045.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "04ffc9c51773216f",
+      "kind": "image",
+      "name": "625a4870c6da681bcecddaeae52f7ce912a38ebd.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\04ffc9c51773216f.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/625a4870c6da681bcecddaeae52f7ce912a38ebd.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "df0dbd057106b83d",
+      "kind": "image",
+      "name": "cf47e267578fd0dc1bce63e5f8e204f02537bf25.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\df0dbd057106b83d.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/cf47e267578fd0dc1bce63e5f8e204f02537bf25.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "4ece76de3f7aaa4b",
+      "kind": "image",
+      "name": "9e02ff62f84d5e53f416620caa18aa3f63a48a4c.png@1c.webp",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\4ece76de3f7aaa4b.webp",
+      "url": "https://i0.hdslb.com/bfs/vc/9e02ff62f84d5e53f416620caa18aa3f63a48a4c.png@1c.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "f775265667c4bf30",
+      "kind": "image",
+      "name": "live.gif@24w_24h.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f775265667c4bf30.avif",
+      "url": "https://i0.hdslb.com/bfs/static/jinkela/long/images/live.gif@24w_24h.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "258a82cbae460724",
+      "kind": "image",
+      "name": "c0c0d73614f56458f90e8538f28e8a08d926e66f.jpg@672w_378h_1c.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\258a82cbae460724.avif",
+      "url": "https://i0.hdslb.com/bfs/live/new_room_cover/c0c0d73614f56458f90e8538f28e8a08d926e66f.jpg@672w_378h_1c.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "bbd87b1e90aab18b",
+      "kind": "image",
+      "name": "7cd22f4505cd44a68a109ab3728290c9.jpeg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\bbd87b1e90aab18b.avif",
+      "url": "https://i0.hdslb.com/bfs/sycp/sanlian/image/7cd22f4505cd44a68a109ab3728290c9.jpeg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "82d59ea079256c75",
+      "kind": "image",
+      "name": "bf6fa51996e303a43a10ece57a105110dc9634b5.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\82d59ea079256c75.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/bf6fa51996e303a43a10ece57a105110dc9634b5.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "ddc6ad723155ba18",
+      "kind": "image",
+      "name": "4beaf84a0b492f5bb77fa37771e6700ad84db748.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\ddc6ad723155ba18.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/4beaf84a0b492f5bb77fa37771e6700ad84db748.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "7fff8b21ff7cc50b",
+      "kind": "image",
+      "name": "d6abaa76cd7147e14a34b5b08e54a716e00df641.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\7fff8b21ff7cc50b.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/d6abaa76cd7147e14a34b5b08e54a716e00df641.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "8d6b265c6a12c492",
+      "kind": "image",
+      "name": "bf129f7eec584e72bc9896b2916de39d.jpeg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\8d6b265c6a12c492.avif",
+      "url": "https://i0.hdslb.com/bfs/sycp/sanlian/image/bf129f7eec584e72bc9896b2916de39d.jpeg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "694152b20aaa7591",
+      "kind": "image",
+      "name": "303ebfc3c889661efd11ee2497b6529846289b94.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\694152b20aaa7591.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/303ebfc3c889661efd11ee2497b6529846289b94.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "a06b2500ffd45c66",
+      "kind": "image",
+      "name": "74a0d02c12daff5489076015df430790f0970c5b.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a06b2500ffd45c66.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/74a0d02c12daff5489076015df430790f0970c5b.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "f10e0d853e312858",
+      "kind": "image",
+      "name": "ec0ff5caac46da095731ae8a318d4ad863fa5489.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f10e0d853e312858.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/ec0ff5caac46da095731ae8a318d4ad863fa5489.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "38f824fa7ae438ec",
+      "kind": "image",
+      "name": "88859734aafb79e67adea26a53956fa099d9cfd2.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\38f824fa7ae438ec.avif",
+      "url": "https://i0.hdslb.com/bfs/archive/88859734aafb79e67adea26a53956fa099d9cfd2.jpg@672w_378h_1c_!web-home-common-cover.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "5b9e4b3d7b9ba3ca",
+      "kind": "image",
+      "name": "a93d569ff53bb0b809c9bca1ff893892bc2b7d51.png@672w_378h_1c.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\5b9e4b3d7b9ba3ca.avif",
+      "url": "https://i0.hdslb.com/bfs/bangumi/image/a93d569ff53bb0b809c9bca1ff893892bc2b7d51.png@672w_378h_1c.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "bf6bb6f36c39c3b0",
+      "kind": "image",
+      "name": "f79bcce74fa40547fd09968d7c83a174c9c40899.png@672w_378h_1c.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\bf6bb6f36c39c3b0.avif",
+      "url": "https://i0.hdslb.com/bfs/bangumi/image/f79bcce74fa40547fd09968d7c83a174c9c40899.png@672w_378h_1c.avif"
+    },
+    {
+      "contentType": "image/avif",
+      "id": "e138c161b2e5cecd",
+      "kind": "image",
+      "name": "3498303973e60dcf41c5948bdfb205585310fbd9.png@672w_378h_1c.avif",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e138c161b2e5cecd.avif",
+      "url": "https://i0.hdslb.com/bfs/bangumi/image/3498303973e60dcf41c5948bdfb205585310fbd9.png@672w_378h_1c.avif"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "fdca2b4bdb37c4fb",
+      "kind": "image",
+      "name": "svg-1",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\fdca2b4bdb37c4fb.svg",
+      "url": "inline-svg:fdca2b4bdb37c4fb"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "8502a4e5565670f2",
+      "kind": "image",
+      "name": "svg-2",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\8502a4e5565670f2.svg",
+      "url": "inline-svg:8502a4e5565670f2"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "bd3d41b367ed606a",
+      "kind": "image",
+      "name": "svg-3",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\bd3d41b367ed606a.svg",
+      "url": "inline-svg:bd3d41b367ed606a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "60350440f9f16b5b",
+      "kind": "image",
+      "name": "svg-4",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\60350440f9f16b5b.svg",
+      "url": "inline-svg:60350440f9f16b5b"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "c374076af9a8f6f0",
+      "kind": "image",
+      "name": "svg-5",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\c374076af9a8f6f0.svg",
+      "url": "inline-svg:c374076af9a8f6f0"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2a5dc4c75ab9858f",
+      "kind": "image",
+      "name": "svg-6",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2a5dc4c75ab9858f.svg",
+      "url": "inline-svg:2a5dc4c75ab9858f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b02e1f688576dd1b",
+      "kind": "image",
+      "name": "svg-7",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b02e1f688576dd1b.svg",
+      "url": "inline-svg:b02e1f688576dd1b"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "80382c9944ddb2fc",
+      "kind": "image",
+      "name": "svg-8",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\80382c9944ddb2fc.svg",
+      "url": "inline-svg:80382c9944ddb2fc"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "866f566144aa4d0c",
+      "kind": "image",
+      "name": "svg-9",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\866f566144aa4d0c.svg",
+      "url": "inline-svg:866f566144aa4d0c"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "144d3d44d62dc28e",
+      "kind": "image",
+      "name": "svg-10",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\144d3d44d62dc28e.svg",
+      "url": "inline-svg:144d3d44d62dc28e"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "e88ab84c77843c20",
+      "kind": "image",
+      "name": "svg-11",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e88ab84c77843c20.svg",
+      "url": "inline-svg:e88ab84c77843c20"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "ade919c21fa63aff",
+      "kind": "image",
+      "name": "svg-12",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\ade919c21fa63aff.svg",
+      "url": "inline-svg:ade919c21fa63aff"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "9c12e8d3816e2735",
+      "kind": "image",
+      "name": "svg-13",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9c12e8d3816e2735.svg",
+      "url": "inline-svg:9c12e8d3816e2735"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "e0f80dd88239a855",
+      "kind": "image",
+      "name": "svg-14",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e0f80dd88239a855.svg",
+      "url": "inline-svg:e0f80dd88239a855"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "d3b5601427e6f0d5",
+      "kind": "image",
+      "name": "svg-15",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\d3b5601427e6f0d5.svg",
+      "url": "inline-svg:d3b5601427e6f0d5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "aee91443f5d7b9d2",
+      "kind": "image",
+      "name": "svg-16",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\aee91443f5d7b9d2.svg",
+      "url": "inline-svg:aee91443f5d7b9d2"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b26cd8b155aa4cdd",
+      "kind": "image",
+      "name": "svg-17",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b26cd8b155aa4cdd.svg",
+      "url": "inline-svg:b26cd8b155aa4cdd"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0ee106988e21e348",
+      "kind": "image",
+      "name": "svg-18",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0ee106988e21e348.svg",
+      "url": "inline-svg:0ee106988e21e348"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "d219968bfe2fe336",
+      "kind": "image",
+      "name": "svg-19",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\d219968bfe2fe336.svg",
+      "url": "inline-svg:d219968bfe2fe336"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "727547f0ab235c7f",
+      "kind": "image",
+      "name": "svg-20",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\727547f0ab235c7f.svg",
+      "url": "inline-svg:727547f0ab235c7f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6de2ff7c8b4670de",
+      "kind": "image",
+      "name": "svg-21",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\6de2ff7c8b4670de.svg",
+      "url": "inline-svg:6de2ff7c8b4670de"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "11c7ad83a0fa35ed",
+      "kind": "image",
+      "name": "svg-22",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\11c7ad83a0fa35ed.svg",
+      "url": "inline-svg:11c7ad83a0fa35ed"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "348960130040f597",
+      "kind": "image",
+      "name": "svg-23",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\348960130040f597.svg",
+      "url": "inline-svg:348960130040f597"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "12be258071922044",
+      "kind": "image",
+      "name": "svg-24",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\12be258071922044.svg",
+      "url": "inline-svg:12be258071922044"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "171b20fb1fc07f05",
+      "kind": "image",
+      "name": "svg-25",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\171b20fb1fc07f05.svg",
+      "url": "inline-svg:171b20fb1fc07f05"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "734878074340184d",
+      "kind": "image",
+      "name": "svg-26",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\734878074340184d.svg",
+      "url": "inline-svg:734878074340184d"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "94a2d8d8c140d03c",
+      "kind": "image",
+      "name": "svg-27",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\94a2d8d8c140d03c.svg",
+      "url": "inline-svg:94a2d8d8c140d03c"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "8bb78a00e605f29b",
+      "kind": "image",
+      "name": "svg-28",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\8bb78a00e605f29b.svg",
+      "url": "inline-svg:8bb78a00e605f29b"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2310e52e36543df0",
+      "kind": "image",
+      "name": "svg-29",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2310e52e36543df0.svg",
+      "url": "inline-svg:2310e52e36543df0"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "d2982206d59d5bff",
+      "kind": "image",
+      "name": "svg-30",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\d2982206d59d5bff.svg",
+      "url": "inline-svg:d2982206d59d5bff"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "f726334b83f0f5c4",
+      "kind": "image",
+      "name": "svg-31",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f726334b83f0f5c4.svg",
+      "url": "inline-svg:f726334b83f0f5c4"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "32e5f8532fb2cd30",
+      "kind": "image",
+      "name": "svg-32",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\32e5f8532fb2cd30.svg",
+      "url": "inline-svg:32e5f8532fb2cd30"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "8ae58bfd714a41d5",
+      "kind": "image",
+      "name": "svg-33",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\8ae58bfd714a41d5.svg",
+      "url": "inline-svg:8ae58bfd714a41d5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "74dc2de5ac2d79b7",
+      "kind": "image",
+      "name": "svg-34",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\74dc2de5ac2d79b7.svg",
+      "url": "inline-svg:74dc2de5ac2d79b7"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "11fab74045c2446d",
+      "kind": "image",
+      "name": "svg-35",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\11fab74045c2446d.svg",
+      "url": "inline-svg:11fab74045c2446d"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b4fb364c5c17eef5",
+      "kind": "image",
+      "name": "svg-36",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b4fb364c5c17eef5.svg",
+      "url": "inline-svg:b4fb364c5c17eef5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "7f7abddfe8c73356",
+      "kind": "image",
+      "name": "svg-37",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\7f7abddfe8c73356.svg",
+      "url": "inline-svg:7f7abddfe8c73356"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "7f53474bbe7fcf25",
+      "kind": "image",
+      "name": "svg-38",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\7f53474bbe7fcf25.svg",
+      "url": "inline-svg:7f53474bbe7fcf25"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "3ac3f713b871438b",
+      "kind": "image",
+      "name": "svg-39",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\3ac3f713b871438b.svg",
+      "url": "inline-svg:3ac3f713b871438b"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b07df1eeba54937a",
+      "kind": "image",
+      "name": "svg-40",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b07df1eeba54937a.svg",
+      "url": "inline-svg:b07df1eeba54937a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "58261e6c2b97700f",
+      "kind": "image",
+      "name": "svg-41",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\58261e6c2b97700f.svg",
+      "url": "inline-svg:58261e6c2b97700f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "50671a6f72cf3858",
+      "kind": "image",
+      "name": "svg-42",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\50671a6f72cf3858.svg",
+      "url": "inline-svg:50671a6f72cf3858"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "1c9855f28c3c7745",
+      "kind": "image",
+      "name": "svg-43",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\1c9855f28c3c7745.svg",
+      "url": "inline-svg:1c9855f28c3c7745"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "bd7ceef2fa08316c",
+      "kind": "image",
+      "name": "svg-44",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\bd7ceef2fa08316c.svg",
+      "url": "inline-svg:bd7ceef2fa08316c"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "02328cf31af806cf",
+      "kind": "image",
+      "name": "svg-45",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\02328cf31af806cf.svg",
+      "url": "inline-svg:02328cf31af806cf"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "f942da0590479b16",
+      "kind": "image",
+      "name": "svg-46",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f942da0590479b16.svg",
+      "url": "inline-svg:f942da0590479b16"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0700f2de72b8fcb3",
+      "kind": "image",
+      "name": "svg-47",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0700f2de72b8fcb3.svg",
+      "url": "inline-svg:0700f2de72b8fcb3"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "60c2545d12285dcb",
+      "kind": "image",
+      "name": "svg-48",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\60c2545d12285dcb.svg",
+      "url": "inline-svg:60c2545d12285dcb"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "1a2301dfc0a393bc",
+      "kind": "image",
+      "name": "svg-49",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\1a2301dfc0a393bc.svg",
+      "url": "inline-svg:1a2301dfc0a393bc"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "d5c8f06fcdd31156",
+      "kind": "image",
+      "name": "svg-50",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\d5c8f06fcdd31156.svg",
+      "url": "inline-svg:d5c8f06fcdd31156"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "f8a2ad62b8aafa45",
+      "kind": "image",
+      "name": "svg-51",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f8a2ad62b8aafa45.svg",
+      "url": "inline-svg:f8a2ad62b8aafa45"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b215177f9eba0973",
+      "kind": "image",
+      "name": "svg-52",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b215177f9eba0973.svg",
+      "url": "inline-svg:b215177f9eba0973"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "87845897cdd37f77",
+      "kind": "image",
+      "name": "svg-53",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\87845897cdd37f77.svg",
+      "url": "inline-svg:87845897cdd37f77"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "75849958c87653e5",
+      "kind": "image",
+      "name": "svg-54",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\75849958c87653e5.svg",
+      "url": "inline-svg:75849958c87653e5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "ca0404d9d2e2d8a8",
+      "kind": "image",
+      "name": "svg-55",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\ca0404d9d2e2d8a8.svg",
+      "url": "inline-svg:ca0404d9d2e2d8a8"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "563628d65f73e856",
+      "kind": "image",
+      "name": "svg-56",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\563628d65f73e856.svg",
+      "url": "inline-svg:563628d65f73e856"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "725b54e37067be83",
+      "kind": "image",
+      "name": "svg-57",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\725b54e37067be83.svg",
+      "url": "inline-svg:725b54e37067be83"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "4beaf10b21148216",
+      "kind": "image",
+      "name": "svg-58",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\4beaf10b21148216.svg",
+      "url": "inline-svg:4beaf10b21148216"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "600d06e5c904dcb0",
+      "kind": "image",
+      "name": "svg-59",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\600d06e5c904dcb0.svg",
+      "url": "inline-svg:600d06e5c904dcb0"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "cc38ceead0f5cf15",
+      "kind": "image",
+      "name": "svg-60",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\cc38ceead0f5cf15.svg",
+      "url": "inline-svg:cc38ceead0f5cf15"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6aa077372ba62670",
+      "kind": "image",
+      "name": "svg-61",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\6aa077372ba62670.svg",
+      "url": "inline-svg:6aa077372ba62670"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "15e4ebf1383ece06",
+      "kind": "image",
+      "name": "svg-62",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\15e4ebf1383ece06.svg",
+      "url": "inline-svg:15e4ebf1383ece06"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "61c0f3d4bd8ff89a",
+      "kind": "image",
+      "name": "svg-63",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\61c0f3d4bd8ff89a.svg",
+      "url": "inline-svg:61c0f3d4bd8ff89a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "c13ecdd1470f3377",
+      "kind": "image",
+      "name": "svg-64",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\c13ecdd1470f3377.svg",
+      "url": "inline-svg:c13ecdd1470f3377"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0363a06f74330813",
+      "kind": "image",
+      "name": "svg-65",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0363a06f74330813.svg",
+      "url": "inline-svg:0363a06f74330813"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "389a8c1bff90904b",
+      "kind": "image",
+      "name": "svg-66",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\389a8c1bff90904b.svg",
+      "url": "inline-svg:389a8c1bff90904b"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "879ad92e1e714ea1",
+      "kind": "image",
+      "name": "svg-67",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\879ad92e1e714ea1.svg",
+      "url": "inline-svg:879ad92e1e714ea1"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "9b088ae2fbcc9fa0",
+      "kind": "image",
+      "name": "svg-68",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9b088ae2fbcc9fa0.svg",
+      "url": "inline-svg:9b088ae2fbcc9fa0"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "72454b972437f531",
+      "kind": "image",
+      "name": "svg-69",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\72454b972437f531.svg",
+      "url": "inline-svg:72454b972437f531"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "009007cb0e3194af",
+      "kind": "image",
+      "name": "svg-70",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\009007cb0e3194af.svg",
+      "url": "inline-svg:009007cb0e3194af"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "092ff383bc4f88e6",
+      "kind": "image",
+      "name": "svg-71",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\092ff383bc4f88e6.svg",
+      "url": "inline-svg:092ff383bc4f88e6"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "975d682714eaa7ab",
+      "kind": "image",
+      "name": "svg-72",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\975d682714eaa7ab.svg",
+      "url": "inline-svg:975d682714eaa7ab"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "246f01859c1c49b4",
+      "kind": "image",
+      "name": "svg-73",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\246f01859c1c49b4.svg",
+      "url": "inline-svg:246f01859c1c49b4"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "265a63acf5a64791",
+      "kind": "image",
+      "name": "svg-74",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\265a63acf5a64791.svg",
+      "url": "inline-svg:265a63acf5a64791"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "d61fd94051eda531",
+      "kind": "image",
+      "name": "svg-75",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\d61fd94051eda531.svg",
+      "url": "inline-svg:d61fd94051eda531"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a3c9062a5c12141a",
+      "kind": "image",
+      "name": "svg-76",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a3c9062a5c12141a.svg",
+      "url": "inline-svg:a3c9062a5c12141a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "4a8dc7bae9ad1fba",
+      "kind": "image",
+      "name": "svg-77",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\4a8dc7bae9ad1fba.svg",
+      "url": "inline-svg:4a8dc7bae9ad1fba"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "379187309fb0de4c",
+      "kind": "image",
+      "name": "svg-78",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\379187309fb0de4c.svg",
+      "url": "inline-svg:379187309fb0de4c"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a1778df1b60cab8e",
+      "kind": "image",
+      "name": "svg-79",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a1778df1b60cab8e.svg",
+      "url": "inline-svg:a1778df1b60cab8e"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "942c6319f0499ae3",
+      "kind": "image",
+      "name": "svg-80",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\942c6319f0499ae3.svg",
+      "url": "inline-svg:942c6319f0499ae3"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a38fc84a4a68eb31",
+      "kind": "image",
+      "name": "svg-81",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a38fc84a4a68eb31.svg",
+      "url": "inline-svg:a38fc84a4a68eb31"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "27540ae253865f70",
+      "kind": "image",
+      "name": "svg-82",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\27540ae253865f70.svg",
+      "url": "inline-svg:27540ae253865f70"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2c7a04d4a6fd5a6d",
+      "kind": "image",
+      "name": "svg-83",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2c7a04d4a6fd5a6d.svg",
+      "url": "inline-svg:2c7a04d4a6fd5a6d"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "de207ccd1b9f3d9b",
+      "kind": "image",
+      "name": "svg-84",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\de207ccd1b9f3d9b.svg",
+      "url": "inline-svg:de207ccd1b9f3d9b"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6e3f8695ee56a789",
+      "kind": "image",
+      "name": "svg-85",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\6e3f8695ee56a789.svg",
+      "url": "inline-svg:6e3f8695ee56a789"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2544e1d85b81b274",
+      "kind": "image",
+      "name": "svg-86",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2544e1d85b81b274.svg",
+      "url": "inline-svg:2544e1d85b81b274"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "3dafb281e450e3e8",
+      "kind": "image",
+      "name": "svg-87",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\3dafb281e450e3e8.svg",
+      "url": "inline-svg:3dafb281e450e3e8"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6763f0b678855094",
+      "kind": "image",
+      "name": "svg-88",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\6763f0b678855094.svg",
+      "url": "inline-svg:6763f0b678855094"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "f4cdaca1bb627928",
+      "kind": "image",
+      "name": "svg-89",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f4cdaca1bb627928.svg",
+      "url": "inline-svg:f4cdaca1bb627928"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "905c97e9312a43c9",
+      "kind": "image",
+      "name": "svg-90",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\905c97e9312a43c9.svg",
+      "url": "inline-svg:905c97e9312a43c9"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "256146bc74173877",
+      "kind": "image",
+      "name": "svg-91",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\256146bc74173877.svg",
+      "url": "inline-svg:256146bc74173877"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0da90d4fe793809f",
+      "kind": "image",
+      "name": "svg-92",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0da90d4fe793809f.svg",
+      "url": "inline-svg:0da90d4fe793809f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "98d41f8b78c73e56",
+      "kind": "image",
+      "name": "svg-93",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\98d41f8b78c73e56.svg",
+      "url": "inline-svg:98d41f8b78c73e56"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "d52c2417943364f4",
+      "kind": "image",
+      "name": "svg-94",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\d52c2417943364f4.svg",
+      "url": "inline-svg:d52c2417943364f4"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "4dc7e55ec6d0dff6",
+      "kind": "image",
+      "name": "svg-95",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\4dc7e55ec6d0dff6.svg",
+      "url": "inline-svg:4dc7e55ec6d0dff6"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "bde073d5826a81bf",
+      "kind": "image",
+      "name": "svg-96",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\bde073d5826a81bf.svg",
+      "url": "inline-svg:bde073d5826a81bf"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0475a48c65497867",
+      "kind": "image",
+      "name": "channel-icon-live",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0475a48c65497867.svg",
+      "url": "inline-svg:0475a48c65497867"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "563743ee0e8b1ead",
+      "kind": "image",
+      "name": "svg-98",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\563743ee0e8b1ead.svg",
+      "url": "inline-svg:563743ee0e8b1ead"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2acd68051709a0b2",
+      "kind": "image",
+      "name": "svg-99",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2acd68051709a0b2.svg",
+      "url": "inline-svg:2acd68051709a0b2"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "3b829da3477dbe5a",
+      "kind": "image",
+      "name": "svg-100",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\3b829da3477dbe5a.svg",
+      "url": "inline-svg:3b829da3477dbe5a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "eba0d270a93c0d69",
+      "kind": "image",
+      "name": "svg-101",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\eba0d270a93c0d69.svg",
+      "url": "inline-svg:eba0d270a93c0d69"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2c2576f13af10e3d",
+      "kind": "image",
+      "name": "svg-102",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2c2576f13af10e3d.svg",
+      "url": "inline-svg:2c2576f13af10e3d"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "e346269f742a46a3",
+      "kind": "image",
+      "name": "svg-103",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e346269f742a46a3.svg",
+      "url": "inline-svg:e346269f742a46a3"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a9eccf3919a16919",
+      "kind": "image",
+      "name": "svg-104",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a9eccf3919a16919.svg",
+      "url": "inline-svg:a9eccf3919a16919"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "1599be7a41dcd154",
+      "kind": "image",
+      "name": "svg-105",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\1599be7a41dcd154.svg",
+      "url": "inline-svg:1599be7a41dcd154"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "01d2fdab96100fc5",
+      "kind": "image",
+      "name": "svg-106",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\01d2fdab96100fc5.svg",
+      "url": "inline-svg:01d2fdab96100fc5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "75e6de51d677200f",
+      "kind": "image",
+      "name": "svg-107",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\75e6de51d677200f.svg",
+      "url": "inline-svg:75e6de51d677200f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "16bdd3031dd1229f",
+      "kind": "image",
+      "name": "svg-108",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\16bdd3031dd1229f.svg",
+      "url": "inline-svg:16bdd3031dd1229f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "62e6f9f57de68b97",
+      "kind": "image",
+      "name": "svg-109",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\62e6f9f57de68b97.svg",
+      "url": "inline-svg:62e6f9f57de68b97"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "5effbc3baaeaf530",
+      "kind": "image",
+      "name": "svg-110",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\5effbc3baaeaf530.svg",
+      "url": "inline-svg:5effbc3baaeaf530"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "258c988e23b814d8",
+      "kind": "image",
+      "name": "svg-111",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\258c988e23b814d8.svg",
+      "url": "inline-svg:258c988e23b814d8"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a6d5ac934b4cf1af",
+      "kind": "image",
+      "name": "svg-112",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a6d5ac934b4cf1af.svg",
+      "url": "inline-svg:a6d5ac934b4cf1af"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "737dcb1251a313af",
+      "kind": "image",
+      "name": "svg-113",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\737dcb1251a313af.svg",
+      "url": "inline-svg:737dcb1251a313af"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "87a5f54f74d310c6",
+      "kind": "image",
+      "name": "svg-114",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\87a5f54f74d310c6.svg",
+      "url": "inline-svg:87a5f54f74d310c6"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "35ad2d823f2806f8",
+      "kind": "image",
+      "name": "svg-115",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\35ad2d823f2806f8.svg",
+      "url": "inline-svg:35ad2d823f2806f8"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "767cc6a16e3c346a",
+      "kind": "image",
+      "name": "svg-116",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\767cc6a16e3c346a.svg",
+      "url": "inline-svg:767cc6a16e3c346a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "7dab38aed0290c1f",
+      "kind": "image",
+      "name": "svg-117",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\7dab38aed0290c1f.svg",
+      "url": "inline-svg:7dab38aed0290c1f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b070d8139e5f0ee9",
+      "kind": "image",
+      "name": "svg-118",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b070d8139e5f0ee9.svg",
+      "url": "inline-svg:b070d8139e5f0ee9"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "9cb49e4dff9d6a84",
+      "kind": "image",
+      "name": "channel-icon-anime",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9cb49e4dff9d6a84.svg",
+      "url": "inline-svg:9cb49e4dff9d6a84"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "3dad8c4dfd8b19e6",
+      "kind": "image",
+      "name": "svg-120",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\3dad8c4dfd8b19e6.svg",
+      "url": "inline-svg:3dad8c4dfd8b19e6"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "911e8be7531407a7",
+      "kind": "image",
+      "name": "svg-121",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\911e8be7531407a7.svg",
+      "url": "inline-svg:911e8be7531407a7"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b9894efa21220749",
+      "kind": "image",
+      "name": "svg-122",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\b9894efa21220749.svg",
+      "url": "inline-svg:b9894efa21220749"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "9ad8346f7a90c58f",
+      "kind": "image",
+      "name": "svg-123",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9ad8346f7a90c58f.svg",
+      "url": "inline-svg:9ad8346f7a90c58f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2d3878085b68d6e2",
+      "kind": "image",
+      "name": "svg-124",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2d3878085b68d6e2.svg",
+      "url": "inline-svg:2d3878085b68d6e2"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "96a2529089ed0318",
+      "kind": "image",
+      "name": "svg-125",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\96a2529089ed0318.svg",
+      "url": "inline-svg:96a2529089ed0318"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a736ab7f7ca48049",
+      "kind": "image",
+      "name": "svg-126",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a736ab7f7ca48049.svg",
+      "url": "inline-svg:a736ab7f7ca48049"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "e10e108ac7868afa",
+      "kind": "image",
+      "name": "svg-127",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e10e108ac7868afa.svg",
+      "url": "inline-svg:e10e108ac7868afa"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "7e21c987ba27673a",
+      "kind": "image",
+      "name": "svg-128",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\7e21c987ba27673a.svg",
+      "url": "inline-svg:7e21c987ba27673a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "83d034660da76a6e",
+      "kind": "image",
+      "name": "svg-129",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\83d034660da76a6e.svg",
+      "url": "inline-svg:83d034660da76a6e"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "f83396aa7801ae9c",
+      "kind": "image",
+      "name": "svg-130",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f83396aa7801ae9c.svg",
+      "url": "inline-svg:f83396aa7801ae9c"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "9b05cf82047c90f5",
+      "kind": "image",
+      "name": "svg-131",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9b05cf82047c90f5.svg",
+      "url": "inline-svg:9b05cf82047c90f5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "068840078c97506e",
+      "kind": "image",
+      "name": "svg-132",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\068840078c97506e.svg",
+      "url": "inline-svg:068840078c97506e"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "ce8c453f91a8bdf8",
+      "kind": "image",
+      "name": "svg-133",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\ce8c453f91a8bdf8.svg",
+      "url": "inline-svg:ce8c453f91a8bdf8"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "3e33fee991cfd89f",
+      "kind": "image",
+      "name": "svg-134",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\3e33fee991cfd89f.svg",
+      "url": "inline-svg:3e33fee991cfd89f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2594c1475ad026fd",
+      "kind": "image",
+      "name": "svg-135",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2594c1475ad026fd.svg",
+      "url": "inline-svg:2594c1475ad026fd"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "9976d24af370fa73",
+      "kind": "image",
+      "name": "svg-136",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9976d24af370fa73.svg",
+      "url": "inline-svg:9976d24af370fa73"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "9b65211886af976a",
+      "kind": "image",
+      "name": "svg-137",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9b65211886af976a.svg",
+      "url": "inline-svg:9b65211886af976a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "3d51d8f3c1dfd0a9",
+      "kind": "image",
+      "name": "svg-138",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\3d51d8f3c1dfd0a9.svg",
+      "url": "inline-svg:3d51d8f3c1dfd0a9"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "e4a4bf74acbab7ac",
+      "kind": "image",
+      "name": "channel-icon-guochuang",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e4a4bf74acbab7ac.svg",
+      "url": "inline-svg:e4a4bf74acbab7ac"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a1bef27e8c20bf73",
+      "kind": "image",
+      "name": "svg-140",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a1bef27e8c20bf73.svg",
+      "url": "inline-svg:a1bef27e8c20bf73"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "e5cbf466d05afbf5",
+      "kind": "image",
+      "name": "svg-141",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e5cbf466d05afbf5.svg",
+      "url": "inline-svg:e5cbf466d05afbf5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2ddb612c4fbc8b5c",
+      "kind": "image",
+      "name": "svg-142",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2ddb612c4fbc8b5c.svg",
+      "url": "inline-svg:2ddb612c4fbc8b5c"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "456409125b64db75",
+      "kind": "image",
+      "name": "svg-143",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\456409125b64db75.svg",
+      "url": "inline-svg:456409125b64db75"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "f42d0496f55281a5",
+      "kind": "image",
+      "name": "svg-144",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\f42d0496f55281a5.svg",
+      "url": "inline-svg:f42d0496f55281a5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "6552659c4983f73f",
+      "kind": "image",
+      "name": "svg-145",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\6552659c4983f73f.svg",
+      "url": "inline-svg:6552659c4983f73f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0fa705c2fbf764b5",
+      "kind": "image",
+      "name": "svg-146",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0fa705c2fbf764b5.svg",
+      "url": "inline-svg:0fa705c2fbf764b5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a0096a41f402bb10",
+      "kind": "image",
+      "name": "svg-147",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a0096a41f402bb10.svg",
+      "url": "inline-svg:a0096a41f402bb10"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "597dcce4d0dbcffd",
+      "kind": "image",
+      "name": "svg-148",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\597dcce4d0dbcffd.svg",
+      "url": "inline-svg:597dcce4d0dbcffd"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "a72dd6a3f55f1ec6",
+      "kind": "image",
+      "name": "svg-149",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\a72dd6a3f55f1ec6.svg",
+      "url": "inline-svg:a72dd6a3f55f1ec6"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "e1a6351bd46aae2b",
+      "kind": "image",
+      "name": "svg-150",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\e1a6351bd46aae2b.svg",
+      "url": "inline-svg:e1a6351bd46aae2b"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "46c8f22984461d1d",
+      "kind": "image",
+      "name": "svg-151",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\46c8f22984461d1d.svg",
+      "url": "inline-svg:46c8f22984461d1d"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "12f434baeaebe2b1",
+      "kind": "image",
+      "name": "svg-152",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\12f434baeaebe2b1.svg",
+      "url": "inline-svg:12f434baeaebe2b1"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "93f3d2b472e2280a",
+      "kind": "image",
+      "name": "svg-153",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\93f3d2b472e2280a.svg",
+      "url": "inline-svg:93f3d2b472e2280a"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0be2cdcca783125e",
+      "kind": "image",
+      "name": "svg-154",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0be2cdcca783125e.svg",
+      "url": "inline-svg:0be2cdcca783125e"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "d847c4528ddc8d72",
+      "kind": "image",
+      "name": "svg-155",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\d847c4528ddc8d72.svg",
+      "url": "inline-svg:d847c4528ddc8d72"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "4ef564bfc35dd271",
+      "kind": "image",
+      "name": "svg-156",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\4ef564bfc35dd271.svg",
+      "url": "inline-svg:4ef564bfc35dd271"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "798a47f3ccefbc02",
+      "kind": "image",
+      "name": "svg-157",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\798a47f3ccefbc02.svg",
+      "url": "inline-svg:798a47f3ccefbc02"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "c63681872ed212d0",
+      "kind": "image",
+      "name": "svg-158",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\c63681872ed212d0.svg",
+      "url": "inline-svg:c63681872ed212d0"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "50c2f9a152238e12",
+      "kind": "image",
+      "name": "svg-159",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\50c2f9a152238e12.svg",
+      "url": "inline-svg:50c2f9a152238e12"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "66a7181569f90afc",
+      "kind": "image",
+      "name": "svg-160",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\66a7181569f90afc.svg",
+      "url": "inline-svg:66a7181569f90afc"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "13b57267f2e31e13",
+      "kind": "image",
+      "name": "svg-161",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\13b57267f2e31e13.svg",
+      "url": "inline-svg:13b57267f2e31e13"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "adc865b5466238b3",
+      "kind": "image",
+      "name": "channel-icon-zongyi",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\adc865b5466238b3.svg",
+      "url": "inline-svg:adc865b5466238b3"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "4ebe96eb998bc67d",
+      "kind": "image",
+      "name": "svg-163",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\4ebe96eb998bc67d.svg",
+      "url": "inline-svg:4ebe96eb998bc67d"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0aac908630f89abd",
+      "kind": "image",
+      "name": "svg-164",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\0aac908630f89abd.svg",
+      "url": "inline-svg:0aac908630f89abd"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "3987126aa1d079ca",
+      "kind": "image",
+      "name": "svg-165",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\3987126aa1d079ca.svg",
+      "url": "inline-svg:3987126aa1d079ca"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "3d802642d35ffa15",
+      "kind": "image",
+      "name": "svg-166",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\3d802642d35ffa15.svg",
+      "url": "inline-svg:3d802642d35ffa15"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "72d7f617315ffb84",
+      "kind": "image",
+      "name": "svg-167",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\72d7f617315ffb84.svg",
+      "url": "inline-svg:72d7f617315ffb84"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "57770f691c99629f",
+      "kind": "image",
+      "name": "svg-168",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\57770f691c99629f.svg",
+      "url": "inline-svg:57770f691c99629f"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "c0a3dfa76a58e2a2",
+      "kind": "image",
+      "name": "svg-169",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\c0a3dfa76a58e2a2.svg",
+      "url": "inline-svg:c0a3dfa76a58e2a2"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "9755cbc5e3a149c9",
+      "kind": "image",
+      "name": "svg-170",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\9755cbc5e3a149c9.svg",
+      "url": "inline-svg:9755cbc5e3a149c9"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2cbdeac3058dc67b",
+      "kind": "image",
+      "name": "svg-171",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\2cbdeac3058dc67b.svg",
+      "url": "inline-svg:2cbdeac3058dc67b"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "02ca1db697b90762",
+      "kind": "image",
+      "name": "svg-172",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\02ca1db697b90762.svg",
+      "url": "inline-svg:02ca1db697b90762"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "c86aa4f6a3a65f79",
+      "kind": "image",
+      "name": "svg-173",
+      "path": "C:\\Users\\victory\\AppData\\Local\\Temp\\browser-use\\assets\\6243e744-0d1d-4373-bb5c-e7e0400a13d8\\c86aa4f6a3a65f79.svg",
+      "url": "inline-svg:c86aa4f6a3a65f79"
+    }
+  ],
+  "failures": [
+    {
+      "contentType": null,
+      "id": "c335e345f7cd6d56",
+      "name": "favicon.ico",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at iV (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://i0.hdslb.com/bfs/static/jinkela/long/images/favicon.ico"
+    },
+    {
+      "contentType": null,
+      "id": "6416c6578f965ab3",
+      "name": "bilibili_pc",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at iV (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://impression.biligame.com/api/impression/bilibili_pc?account_id=36&campaign_id=__CAMPAIGNID__&unit_id=__UNITID__&creative_id=1182426294892703744&supply_callback=pbaes.Vxo4n1WnhMeBwzfAZ249evAnCvSHaNKCj-vMmL7XHWNs-SdN3zqWdA8JtFYnJpNoYkEiTmvNjC4I7sXdSWMXv90_4Vh33bppe2-RNQ9KfEICOXnX8q_rjynH4GluWF4tkYx69TP5bXAQ14ZRFSJUSA%3D%3D&callback_url=https%3a%2f%2fcm.bilibili.com%2fconv%2fapi%2fconversion%2fad%2fcb%2fv1%3ftrack_id%3dpbaes.Vxo4n1WnhMeBwzfAZ249evAnCvSHaNKCj-vMmL7XHWNs-SdN3zqWdA8JtFYnJpNoYkEiTmvNjC4I7sXdSWMXv90_4Vh33bppe2-RNQ9KfEICOXnX8q_rjynH4GluWF4tkYx69TP5bXAQ14ZRFSJUSA%3D%3D&mid=3493267654052139&os=3&idfa=__IDFA__&buvid=2B4E12B7-D891-17D5-DD9D-29D8AE2FA5F528848infoc&android_id=__ANDROIDID__&oaid=__OAID__&imei=__IMEI__&mac=__MAC__&duid=__DUID__&ip=117.150.52.146&request_id=1785080391747q10a88a77a74q2438&ts=__TS__&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F150.0.0.0+Safari%2F537.36&ad_channel_id=3&ad_f=6ee01fea87e34a20bdee8a2e7aa0b928&game_id=19418"
+    },
+    {
+      "contentType": null,
+      "id": "d539abfc9090652f",
+      "name": "bilibili_pc",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at iV (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://impression.biligame.com/api/impression/bilibili_pc?account_id=36&campaign_id=__CAMPAIGNID__&unit_id=__UNITID__&creative_id=1183487754364420096&supply_callback=pbaes.Vxo4n1WnhMeBwzfAZ249evAnCvSHaNKCj-vMmL7XHWNs-SdN3zqWdA8JtFYnJpNoYkEiTmvNjC4I7sXdSWMXv90_4Vh33bppe2-RNQ9KfEJXk8GcSXQdaUdGVvWsgLF0Pw5T3KD8TtQFqo4XGX0HqA%3D%3D&callback_url=https%3a%2f%2fcm.bilibili.com%2fconv%2fapi%2fconversion%2fad%2fcb%2fv1%3ftrack_id%3dpbaes.Vxo4n1WnhMeBwzfAZ249evAnCvSHaNKCj-vMmL7XHWNs-SdN3zqWdA8JtFYnJpNoYkEiTmvNjC4I7sXdSWMXv90_4Vh33bppe2-RNQ9KfEJXk8GcSXQdaUdGVvWsgLF0Pw5T3KD8TtQFqo4XGX0HqA%3D%3D&mid=3493267654052139&os=3&idfa=__IDFA__&buvid=2B4E12B7-D891-17D5-DD9D-29D8AE2FA5F528848infoc&android_id=__ANDROIDID__&oaid=__OAID__&imei=__IMEI__&mac=__MAC__&duid=__DUID__&ip=117.150.52.146&request_id=1785080391747q10a88a77a74q2438&ts=__TS__&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F150.0.0.0+Safari%2F537.36&ad_channel_id=3&ad_f=63b6d72a215848a28be45dd7c7e30338&game_id=16499"
+    }
+  ]
+}

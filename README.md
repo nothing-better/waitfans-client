@@ -1,32 +1,35 @@
-# React + TypeScript + Vite
+# waitfans 用户端
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+teriteri 用户端的 React 迁移版本，按仓库根目录的 `MIGRATION_REACT.md` 实现。
 
-Currently, two official plugins are available:
+## 技术栈
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 18、TypeScript、Vite 5
+- React Router 6、Redux Toolkit
+- Ant Design 5、Axios
+- Video.js、SparkMD5、原生 WebSocket
+- Vitest、Testing Library、Oxlint
 
-## React Compiler
+## 本地运行
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+copy .env.example .env.local
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+默认后端地址为 `http://localhost:8080`，即时消息服务为
+`ws://localhost:7071`。也可不创建 `.env.local`，此时 HTTP 请求使用
+`/api` 相对路径。
+
+## 校验
+
+```bash
+npm run build
+npm run test
+npm run lint
+```
+
+已迁移首页、搜索、视频播放、弹幕、评论、个人空间、账号设置、创作中心、
+分片上传、消息中心和登录注册等主流程。路由和后端接口契约保持与原 Vue
+项目兼容。

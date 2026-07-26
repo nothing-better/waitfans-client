@@ -7,26 +7,34 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "test": "vitest run",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "react-router-dom": "^7.6.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
     "react-redux": "^9.2.0",
     "@reduxjs/toolkit": "^2.8.1",
     "antd": "^5.24.9",
     "@ant-design/icons": "^5.6.1",
-    "axios": "^1.9.2"
+    "axios": "^1.9.2",
+    "spark-md5": "^3.0.2",
+    "video.js": "^8.23.4"
   },
   "devDependencies": {
     "@types/node": "^24.13.2",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.3",
+    "@types/react": "^18.3.24",
+    "@types/react-dom": "^18.3.7",
+    "@types/spark-md5": "^3.0.5",
+    "@vitejs/plugin-react": "^4.4.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "jsdom": "^26.1.0",
     "oxlint": "^1.71.0",
-    "typescript": "~6.0.2",
-    "vite": "^8.1.1",
+    "typescript": "~5.7.3",
+    "vite": "^5.4.19",
+    "vitest": "^2.1.9",
     "tailwindcss": "^4.1.6",
     "@tailwindcss/vite": "^4.1.6"
   }

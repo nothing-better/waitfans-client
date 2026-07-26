@@ -11,8 +11,18 @@ import './styles/globals.css'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
-      <ConfigProvider locale={zhCN}>
-        <BrowserRouter>
+      <ConfigProvider
+        locale={zhCN}
+        theme={{
+          token: {
+            colorPrimary: '#fb7299',
+            borderRadius: 8,
+            fontFamily:
+              "'HarmonyOS Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+          },
+        }}
+      >
+        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <App />
         </BrowserRouter>
       </ConfigProvider>
