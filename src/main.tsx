@@ -8,20 +8,27 @@ import { store } from './store'
 import App from './App'
 import './styles/globals.css'
 
+const theme = {
+  token: {
+    colorPrimary: '#fb7299',
+    borderRadius: 8,
+    fontFamily:
+      "'HarmonyOS Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+  },
+}
+
+ConfigProvider.config({
+  holderRender: (children) => (
+    <ConfigProvider locale={zhCN} theme={theme}>
+      {children}
+    </ConfigProvider>
+  ),
+})
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
-      <ConfigProvider
-        locale={zhCN}
-        theme={{
-          token: {
-            colorPrimary: '#fb7299',
-            borderRadius: 8,
-            fontFamily:
-              "'HarmonyOS Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-          },
-        }}
-      >
+      <ConfigProvider locale={zhCN} theme={theme}>
         <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <App />
         </BrowserRouter>

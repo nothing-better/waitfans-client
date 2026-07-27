@@ -29,6 +29,8 @@ export default function LoginRegister({ open, onClose }: LoginRegisterProps) {
       await dispatch(loginUser(values)).unwrap()
       message.success('登录成功')
       onClose()
+    } catch {
+      // The shared request layer presents the server error.
     } finally {
       setSubmitting(false)
     }
@@ -39,6 +41,8 @@ export default function LoginRegister({ open, onClose }: LoginRegisterProps) {
     try {
       await register(values)
       message.success('注册成功，请登录')
+    } catch {
+      // The shared request layer presents the server error.
     } finally {
       setSubmitting(false)
     }

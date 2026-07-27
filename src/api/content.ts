@@ -8,6 +8,12 @@ export interface Channel {
   children?: Array<{ scId: number; scName: string }>
 }
 
+export interface HotSearch {
+  content: string
+  score: number
+  type: number
+}
+
 export interface Favorite {
   fid: number
   uid: number
@@ -18,7 +24,10 @@ export interface Favorite {
 }
 
 export const getChannels = () => getData<Channel[]>('/category/getall')
-export const getHotSearch = () => getData<string[]>('/search/hot/get')
+export const toTrendingKeywords = (items: HotSearch[]) =>
+  items.map(({ content }) => content).filter(Boolean)
+export const getHotSearch = async () =>
+  toTrendingKeywords(await getData<HotSearch[]>('/search/hot/get'))
 export const getMatchingWords = (keyword: string) =>
   getData<string[]>('/search/word/get', { params: { keyword: encodeURIComponent(keyword) } })
 export const addSearchWord = (keyword: string) => {

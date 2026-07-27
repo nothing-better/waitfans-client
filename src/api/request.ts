@@ -22,7 +22,9 @@ request.interceptors.response.use(
   (response) => {
     const payload = response.data as ApiResponse
     if (payload?.code && payload.code !== 200) {
-      message.error(payload.message || '请求失败')
+      const reason = payload.message || '请求失败'
+      message.error(reason)
+      return Promise.reject(new Error(reason))
     }
     return response
   },
