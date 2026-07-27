@@ -139,3 +139,32 @@ Vite 默认使用 `8787`。先停止占用该端口的旧开发服务器，再�
 ### 业务错误仍被当作成功
 
 API 响应的 HTTP 状态可能是 `200`，但响应体 `code` 非 `200`。共享请求层会将这种响应转为 rejected Promise；页面提交逻辑必须保留错误处理，不能继续执行成功跳转或成功提示。
+
+## 8. 已知问题
+
+### 🔴 未解决
+
+| # | 问题 | 位置 | 说明 |
+|---|------|------|------|
+| 1 | **登录后点击头像无反应** | `HeaderBar.tsx:165` | `<Dropdown trigger={['click']}>` 未能触发菜单弹出，可能是 Ant Design 与 Avatar 组件的兼容问题。临时方案：悬停头像可见菜单 |
+| 2 | 管理员登录后 `fetchPersonalInfo` 返回 403 | `App.tsx` 初始化 | `/user/personal/info` 不在 `permitAll` 列表中，未登用户端时调用此接口会失败 |
+
+### 🟡 占位数据
+
+| # | 位置 | 说明 |
+|---|------|------|
+| 1 | `assets/json/carousel.json` | 8 个轮播 `target` 指向 `/video/demo-1` ~ `/video/demo-8`，数据库中不存在，点击后控制台报 500 |
+| 2 | `assets/json/dm.json` | 26 条演示弹幕（用户 ID 恒为 1） |
+| 3 | `pages/Home/IndexPage.tsx:11-45` | `fallbackSeeds` 含 16 条 `vid=demo-N` 占位视频 |
+| 4 | `pages/Platform/PlatformPage.tsx:203-210` | 稿件管理、申诉管理、数据中心等 6 页面为占位 |
+| 5 | `pages/Space/SpacePage.tsx:121-123` | 动态/粉丝/关注标签页为占位 |
+| 6 | `components/Layout/HeaderChannel.tsx:14-17` | 22 个频道名硬编码 |
+
+### 🟢 接口不匹配
+
+| # | 问题 | 文件 |
+|---|------|------|
+| 1 | `User` 同时有 `avatar`/`avatar_url`、`sign`/`description` 双字段 | `types/user.ts` |
+| 2 | `Comment` 字段与后端命名不一致 | `types/comment.ts` |
+| 3 | `Danmu` 同时有 `timePoint`/`time` 双字段 | `types/danmu.ts` |
+| 4 | 空 catch 块在 `LoginRegister.tsx:32,44` 和 `websocket.ts:31` | 应至少加 `console.error` |

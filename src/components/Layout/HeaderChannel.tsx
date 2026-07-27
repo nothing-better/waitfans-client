@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import {
   BookOutlined,
   FireFilled,
@@ -10,15 +10,19 @@ import {
   VideoCameraOutlined,
 } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
-
-const fallback = [
-  '番剧', '国创', '综艺', '动画', '鬼畜', '舞蹈', '娱乐', '科技数码',
-  '美食', '汽车', '体育运动', '电影', '电视剧', '纪录片', '游戏', '音乐',
-  '影视', '知识', '资讯', '小剧场', '时尚美妆', '更多',
-]
+import { useAppSelector } from '@/store/hooks'
 
 export default function HeaderChannel() {
   const [compact, setCompact] = useState(false)
+  const channels = useAppSelector((state) => state.content.channels)
+  const user = useAppSelector((state) => state.user.current)
+  const channelLabels = useMemo(
+    () => channels.flatMap((channel) => [
+      channel.mcName,
+      ...(channel.children || []).map((child) => child.scName),
+    ]).filter(Boolean).slice(0, 22),
+    [channels],
+  )
 
   useEffect(() => {
     const update = () => setCompact(window.scrollY > 150)
@@ -30,7 +34,7 @@ export default function HeaderChannel() {
   return (
     <div className={`channel-row page-container ${compact ? 'channel-row--compact' : ''}`}>
       <div className="channel-shortcuts">
-        <Link to="/message/dynamic">
+        <Link to={user ? `/space/${user.uid}/dynamic` : '/search/video?keyword=动态'}>
           <span className="shortcut-icon shortcut-icon--dynamic"><RadiusSettingOutlined /></span>
           动态
         </Link>
@@ -40,11 +44,12 @@ export default function HeaderChannel() {
         </Link>
       </div>
       <div className="channel-grid">
-        {fallback.map((label) => (
+        {channelLabels.map((label) => (
           <Link key={label} to={`/search/video?keyword=${encodeURIComponent(label)}`}>
             {label}
           </Link>
         ))}
+        {channelLabels.length === 0 ? <span className="channel-grid__loading">分区加载中…</span> : null}
       </div>
       <div className="channel-extra">
         <Link to="/search/video?keyword=专栏"><ReadOutlined />专栏</Link>

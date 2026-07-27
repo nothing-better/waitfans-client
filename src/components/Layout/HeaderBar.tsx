@@ -162,12 +162,14 @@ export default function HeaderBar() {
         </Popover>
         <div className="site-actions">
           {authenticated ? (
-            <Dropdown menu={userMenu} placement="bottomRight">
-              <Avatar
-                className="site-avatar"
-                src={user?.avatar_url || user?.avatar}
-                icon={<UserOutlined />}
-              />
+            <Dropdown menu={userMenu} trigger={['click']}>
+              <div className="site-avatar-wrapper">
+                <Avatar
+                  className="site-avatar"
+                  src={user?.avatar_url || user?.avatar}
+                  icon={<UserOutlined />}
+                />
+              </div>
             </Dropdown>
           ) : (
             <Popover content={loginGuide} placement="bottom" trigger="hover">

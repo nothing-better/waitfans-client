@@ -1,6 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Avatar, Empty, Skeleton, Tabs } from 'antd'
-import { UserOutlined } from '@ant-design/icons'
+import { Avatar, Button, Empty, Skeleton, Statistic, Tabs } from 'antd'
+import {
+  HeartOutlined,
+  MessageOutlined,
+  PlayCircleOutlined,
+  UserOutlined,
+  VideoCameraOutlined,
+} from '@ant-design/icons'
 import { useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { getFavorites, type Favorite } from '@/api/content'
 import { getUserInfo } from '@/api/user'
@@ -15,12 +21,10 @@ import type { VideoFeedItem } from '@/types/video'
 const tabItems = [
   ['home', '主页'],
   ['video', '投稿'],
-  ['article', '专栏'],
-  ['dynamic', '动态'],
+  ['dynamic', '喜欢'],
   ['favlist', '收藏'],
-  ['fans/follow', '关注'],
-  ['fans/fans', '粉丝'],
 ] as const
+const validTabs = new Set(tabItems.map(([key]) => key))
 
 export default function SpacePage() {
   const { uid = '' } = useParams()
@@ -33,10 +37,11 @@ export default function SpacePage() {
   const [videos, setVideos] = useState<VideoFeedItem[]>([])
   const [favorites, setFavorites] = useState<Favorite[]>([])
   const [loading, setLoading] = useState(true)
+  const [contentLoading, setContentLoading] = useState(true)
 
   const active = useMemo(() => {
     const suffix = location.pathname.replace(`/space/${uid}`, '').replace(/^\//, '')
-    return suffix || 'home'
+    return validTabs.has(suffix as typeof tabItems[number][0]) ? suffix : 'home'
   }, [location.pathname, uid])
 
   useEffect(() => {
@@ -49,20 +54,54 @@ export default function SpacePage() {
   }, [uid])
 
   useEffect(() => {
+    let activeRequest = true
     const ownSpace = Number(currentUser?.uid) === Number(uid)
+    setContentLoading(true)
+    setVideos([])
+    setFavorites([])
+    const finish = () => {
+      if (activeRequest) setContentLoading(false)
+    }
     if (active === 'video' || active === 'home') {
-      getUserWorks(uid).then((result) => setVideos(result?.list || [])).catch(() => setVideos([]))
+      getUserWorks(uid)
+        .then((result) => { if (activeRequest) setVideos(result?.list || []) })
+        .catch(() => { if (activeRequest) setVideos([]) })
+        .finally(finish)
     } else if (active === 'favlist') {
       const fid = searchParams.get('fid')
       if (fid) {
-        getUserCollectedVideos(fid).then(setVideos).catch(() => setVideos([]))
+        getUserCollectedVideos(fid)
+          .then((result) => { if (activeRequest) setVideos(result) })
+          .catch(() => { if (activeRequest) setVideos([]) })
+          .finally(finish)
       } else {
-        getFavorites(uid, authenticated && ownSpace).then(setFavorites).catch(() => setFavorites([]))
+        getFavorites(uid, authenticated && ownSpace)
+          .then((result) => { if (activeRequest) setFavorites(result) })
+          .catch(() => { if (activeRequest) setFavorites([]) })
+          .finally(finish)
       }
     } else if (active === 'dynamic') {
-      getUserLovedVideos(uid).then(setVideos).catch(() => setVideos([]))
+      getUserLovedVideos(uid)
+        .then((result) => { if (activeRequest) setVideos(result) })
+        .catch(() => { if (activeRequest) setVideos([]) })
+        .finally(finish)
+    } else {
+      finish()
     }
+    return () => { activeRequest = false }
   }, [active, authenticated, currentUser?.uid, searchParams, uid])
+
+  const totals = useMemo(
+    () => videos.reduce(
+      (result, item) => ({
+        play: result.play + Number(item.stats.play || 0),
+        danmu: result.danmu + Number(item.stats.danmu || 0),
+        good: result.good + Number(item.stats.good || 0),
+      }),
+      { play: 0, danmu: 0, good: 0 },
+    ),
+    [videos],
+  )
 
   if (loading) {
     return <main className="surface-page"><div className="page-container"><Skeleton active /></div></main>
@@ -77,11 +116,24 @@ export default function SpacePage() {
       <div className="space-shell page-container">
         <section className="space-header surface-panel" style={{ backgroundImage: `url(${accountTop})` }}>
           <Avatar size={88} src={profile.avatar_url || profile.avatar} icon={<UserOutlined />} />
-          <div>
+          <div className="space-header__profile">
             <h1>{profile.nickname}</h1>
             <p>{profile.description || '这个人很神秘，什么都没有写。'}</p>
             <span>{handleNum(profile.followCount || 0)} 关注</span>
             <span>{handleNum(profile.fansCount || 0)} 粉丝</span>
+          </div>
+          <div className="space-header__actions">
+            {Number(currentUser?.uid) === Number(uid) ? (
+              <Button onClick={() => navigate('/account/info')}>编辑资料</Button>
+            ) : (
+              <Button
+                type="primary"
+                icon={<MessageOutlined />}
+                onClick={() => navigate(`/message/whisper/${uid}`)}
+              >
+                私信
+              </Button>
+            )}
           </div>
         </section>
         <section className="space-content surface-panel">
@@ -90,14 +142,26 @@ export default function SpacePage() {
             onChange={(key) => navigate(`/space/${uid}/${key === 'home' ? '' : key}`)}
             items={tabItems.map(([key, label]) => ({ key, label }))}
           />
-          {(active === 'home' || active === 'video' || active === 'dynamic') ? (
+          {contentLoading ? <Skeleton active paragraph={{ rows: 6 }} /> : null}
+          {!contentLoading && active === 'home' ? (
+            <>
+              <div className="space-overview">
+                <Statistic title="投稿" value={videos.length} prefix={<VideoCameraOutlined />} />
+                <Statistic title="播放" value={totals.play} prefix={<PlayCircleOutlined />} />
+                <Statistic title="弹幕" value={totals.danmu} prefix={<MessageOutlined />} />
+                <Statistic title="获赞" value={totals.good} prefix={<HeartOutlined />} />
+              </div>
+              <h2 className="space-section-title">最近投稿</h2>
+            </>
+          ) : null}
+          {!contentLoading && (active === 'home' || active === 'video' || active === 'dynamic') ? (
             videos.length ? (
               <div className="space-video-grid">
                 {videos.map((item) => <VideoCard key={item.video.vid} item={item} />)}
               </div>
             ) : <Empty description="这里还没有内容" />
           ) : null}
-          {active === 'favlist' ? (
+          {!contentLoading && active === 'favlist' ? (
             favorites.length && !searchParams.get('fid') ? (
               <div className="favorite-grid">
                 {favorites.map((favorite) => (
@@ -117,9 +181,6 @@ export default function SpacePage() {
                 {videos.map((item) => <VideoCard key={item.video.vid} item={item} />)}
               </div>
             ) : <Empty description="收藏夹是空的" />
-          ) : null}
-          {['article', 'fans/follow', 'fans/fans', 'setting'].includes(active) ? (
-            <Empty description="该模块已迁入 React，等待后端数据接入" />
           ) : null}
         </section>
       </div>

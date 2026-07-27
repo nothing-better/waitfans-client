@@ -23,7 +23,8 @@ export default function CommentTree({ vid }: CommentTreeProps) {
   const load = useCallback(async () => {
     setLoading(true)
     try {
-      setComments((await getComments(vid)) || [])
+      const result = await getComments(vid)
+      setComments(result?.comments || [])
     } finally {
       setLoading(false)
     }
@@ -39,6 +40,9 @@ export default function CommentTree({ vid }: CommentTreeProps) {
     if (!content.trim()) return
     const data = new FormData()
     data.append('vid', String(vid))
+    data.append('root_id', '0')
+    data.append('parent_id', '0')
+    data.append('to_user_id', '0')
     data.append('content', content.trim())
     const created = await addComment(data)
     setComments((current) => [created, ...current])

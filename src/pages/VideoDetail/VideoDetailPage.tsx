@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Avatar, Button, Empty, Tag, message } from 'antd'
+import { Avatar, Button, Empty, Skeleton, Tag, message } from 'antd'
 import {
   DislikeOutlined,
   LikeOutlined,
@@ -16,6 +16,7 @@ import DanmuBox from '@/components/Danmu/DanmuBox'
 import CommentTree from '@/components/Comment/CommentTree'
 import VideoCard from '@/components/VideoCard/VideoCard'
 import { useAppSelector } from '@/store/hooks'
+import { useDanmuChannel } from '@/hooks/useDanmuChannel'
 import { handleDate, handleNum } from '@/utils/format'
 import type { Danmu } from '@/types/danmu'
 import type { VideoDetailData, VideoFeedItem } from '@/types/video'
@@ -28,9 +29,21 @@ export default function VideoDetailPage() {
   const [danmu, setDanmu] = useState<Danmu[]>([])
   const [currentTime, setCurrentTime] = useState(0)
   const [liked, setLiked] = useState(false)
+  const [loading, setLoading] = useState(true)
+  const [loadError, setLoadError] = useState(false)
+
+  const receiveDanmu = (item: Danmu) => {
+    setDanmu((current) => {
+      if (item.id && current.some((existing) => existing.id === item.id)) return current
+      return [...current, item]
+    })
+  }
+  const { connected: danmuConnected, send: sendDanmuMessage } = useDanmuChannel(vid, receiveDanmu)
 
   useEffect(() => {
     let active = true
+    setLoading(true)
+    setLoadError(false)
     Promise.all([
       getVideoDetail(vid),
       getCumulativeVideos([vid]).catch(() => ({ videos: [], vids: [], more: false })),
@@ -41,7 +54,12 @@ export default function VideoDetailPage() {
       setRecommendations(recommended.videos || [])
       setDanmu(nextDanmu || [])
     }).catch(() => {
-      if (active) setDetail(null)
+      if (active) {
+        setDetail(null)
+        setLoadError(true)
+      }
+    }).finally(() => {
+      if (active) setLoading(false)
     })
     return () => { active = false }
   }, [vid])
@@ -51,11 +69,19 @@ export default function VideoDetailPage() {
     [detail?.video.tags],
   )
 
+  if (loading) {
+    return (
+      <main className="surface-page">
+        <div className="page-container surface-panel video-missing"><Skeleton active /></div>
+      </main>
+    )
+  }
+
   if (!detail) {
     return (
       <main className="surface-page">
         <div className="page-container surface-panel video-missing">
-          <Empty description="视频不存在或暂时无法加载" />
+          <Empty description={loadError ? '视频不存在或暂时无法加载' : '视频不存在'} />
         </div>
       </main>
     )
@@ -79,8 +105,10 @@ export default function VideoDetailPage() {
       message.warning('请先登录')
       return false
     }
-    const item: Danmu = { content, timePoint: currentTime, color: '#ffffff' }
-    setDanmu((current) => [...current, item])
+    if (!danmuConnected || !sendDanmuMessage(content, currentTime)) {
+      message.error('弹幕服务尚未连接，请稍后重试')
+      return false
+    }
     return true
   }
 

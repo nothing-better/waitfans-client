@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Avatar, Button, Form, Input, Radio, Tabs, Upload, message } from 'antd'
-import { CameraOutlined, LockOutlined, UserOutlined } from '@ant-design/icons'
+import { Avatar, Button, Form, Input, Radio, Statistic, Tabs, Upload, message } from 'antd'
+import { CameraOutlined, CheckCircleOutlined, LockOutlined, StarOutlined, UserOutlined } from '@ant-design/icons'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { updateAvatar, updatePassword, updateProfile } from '@/api/user'
 import { useAppDispatch, useAppSelector } from '@/store/hooks'
@@ -85,10 +85,18 @@ export default function AccountPage() {
         </aside>
         <section className="account-content">
           {active === 'home' ? (
-            <div className="account-overview">
-              <Avatar size={96} src={avatarUrl} icon={<UserOutlined />} />
-              <div><h2>{user?.nickname}</h2><p>{user?.description || '欢迎回来'}</p></div>
-            </div>
+            <>
+              <div className="account-overview">
+                <Avatar size={96} src={avatarUrl} icon={<UserOutlined />} />
+                <div><h2>{user?.nickname}</h2><p>{user?.description || '欢迎回来'}</p></div>
+              </div>
+              <div className="account-status-grid">
+                <Statistic title="成长值" value={user?.exp || 0} prefix={<StarOutlined />} />
+                <Statistic title="账号状态" value={user?.state === 1 ? '受限' : '正常'} prefix={<CheckCircleOutlined />} />
+                <Statistic title="认证" value={user?.auth ? '已认证' : '未认证'} prefix={<UserOutlined />} />
+              </div>
+              <Button type="primary" onClick={() => navigate('/account/info')}>完善个人资料</Button>
+            </>
           ) : null}
           {active === 'info' ? (
             <>
@@ -101,7 +109,7 @@ export default function AccountPage() {
                   <Input.TextArea maxLength={80} showCount />
                 </Form.Item>
                 <Form.Item name="gender" label="性别">
-                  <Radio.Group options={[{ label: '保密', value: 0 }, { label: '男', value: 1 }, { label: '女', value: 2 }]} />
+                  <Radio.Group options={[{ label: '女', value: 0 }, { label: '男', value: 1 }, { label: '保密', value: 2 }]} />
                 </Form.Item>
                 <Button type="primary" htmlType="submit">保存修改</Button>
               </Form>

@@ -1,4 +1,4 @@
-import { getData, postData } from './request'
+import request, { getData } from './request'
 
 export interface UnreadCounts {
   reply: number
@@ -35,12 +35,23 @@ export interface ChatItem {
 }
 
 export const getUnreadCounts = () => getData<UnreadCounts>('/msg-unread/all')
-export const clearUnread = (type: string) => {
+export const clearUnread = async (column: string) => {
   const data = new FormData()
-  data.append('type', type)
-  return postData<unknown>('/msg-unread/clear', data)
+  data.append('column', column)
+  await request.post('/msg-unread/clear', data)
 }
-export const getRecentChats = (page = 1) =>
-  getData<ChatItem[]>('/msg/chat/recent-list', { params: { page } })
+export const getRecentChats = (offset = 0) =>
+  getData<{ list: ChatItem[]; more: boolean }>('/msg/chat/recent-list', { params: { offset } })
 export const createChat = (uid: number | string) =>
   getData<ChatItem>(`/msg/chat/create/${uid}`)
+export const deleteChat = (uid: number | string) =>
+  getData<unknown>(`/msg/chat/delete/${uid}`)
+export const setChatOnline = async (uid: number | string) => {
+  await request.get('/msg/chat/online', { params: { from: uid } })
+}
+export const setChatOffline = async (
+  from: number | string,
+  to: number | string,
+) => {
+  await request.get('/msg/chat/outline', { params: { from, to } })
+}
