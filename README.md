@@ -2,10 +2,50 @@
 
 Waitfans 用户端是基于 React 18、TypeScript 和 Vite 5 的独立前端仓库。它通过 HTTP API 访问 `waitfans-backend`，并通过独立的 IM WebSocket 服务收发实时消息。
 
+> **开发前必读**：所有 AI 和开发者必须遵守 [AGENTS.md](AGENTS.md)。任何文件改动都必须验证并创建 Git 提交后才能结束任务。
+
+## 0. 从干净环境启动
+
+以下步骤适用于 Windows PowerShell。
+
+如果用户端、管理端和后端位于同一个 `waitfans` 父目录，最简单的方式是在父目录执行 `.\start-all.ps1`；首次运行使用 `.\start-all.ps1 -Bootstrap`。
+
+1. 按 `../waitfans-backend/README.md` 的“从干净环境启动”完成后端初始化。
+2. 确认后端 HTTP `7070` 和 IM `7071` 已启动：
+
+```powershell
+(Invoke-RestMethod http://127.0.0.1:7070/category/getall).code
+Test-NetConnection 127.0.0.1 -Port 7071
+```
+
+3. 在本仓库安装锁定版本并启动固定端口：
+
+```powershell
+npm ci
+npm run dev -- --host 127.0.0.1 --port 8787 --strictPort
+```
+
+4. 打开 `http://127.0.0.1:8787/`，再检查前端代理：
+
+```powershell
+(Invoke-RestMethod http://127.0.0.1:8787/api/category/getall).code
+(Invoke-RestMethod http://127.0.0.1:8787/api/search/hot/get).code
+```
+
+两个命令都应输出 `200`。全新数据库没有已过审视频时，首页显示“还没有已过审的视频”是正常空数据态，不表示启动失败。
+
+日常启动时无需重复 `npm ci`；先启动后端，再执行：
+
+```powershell
+npm run dev -- --host 127.0.0.1 --port 8787 --strictPort
+```
+
+测试头像、封面或视频上传前，必须按后端 README 启动并初始化 MinIO。浏览、分区、搜索、注册和登录不要求 MinIO。
+
 ## 1. 运行要求
 
-- Node.js 20 或更高版本（本次验证使用 Node.js 24）
-- npm 10 或更高版本（本次验证使用 npm 11）
+- Node.js 20 或更高版本（Node.js 22 已验证）
+- npm 10 或更高版本（npm 10 已验证）
 - 已启动的 Waitfans 后端：
   - HTTP：`http://127.0.0.1:7070`
   - IM WebSocket：`ws://127.0.0.1:7071/im`
@@ -55,7 +95,7 @@ VITE_WS_IM_URL=ws://localhost:7071
 先按后端仓库 README 启动依赖和后端，再执行：
 
 ```powershell
-npm run dev
+npm run dev -- --host 127.0.0.1 --port 8787 --strictPort
 ```
 
 默认访问地址：
@@ -64,7 +104,7 @@ npm run dev
 http://127.0.0.1:8787/
 ```
 
-如果需要显式限制监听地址和端口：
+等价的 Vite 直接启动命令：
 
 ```powershell
 .\node_modules\.bin\vite.cmd --host=127.0.0.1 --port=8787 --strictPort
