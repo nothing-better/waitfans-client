@@ -59,10 +59,14 @@ export default function AccountPage() {
   const uploadAvatar = async (file: File) => {
     const data = new FormData()
     data.append('file', file)
-    const url = await updateAvatar(data)
-    setAvatarUrl(url)
-    if (user) dispatch(updateCurrentUser({ ...user, avatar_url: url }))
-    message.success('头像已更新')
+    try {
+      const url = await updateAvatar(data)
+      setAvatarUrl(url)
+      if (user) dispatch(updateCurrentUser({ ...user, avatar_url: url }))
+      message.success('头像已更新')
+    } catch {
+      message.error('头像更新失败，请确认存储服务（MinIO）已启动')
+    }
     return false
   }
 

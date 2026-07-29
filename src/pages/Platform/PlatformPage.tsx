@@ -7,12 +7,14 @@ import {
   Form,
   Input,
   List,
+  Popconfirm,
   Progress,
   Radio,
   Segmented,
   Select,
   Skeleton,
   Statistic,
+  Space,
   Table,
   Tag,
   Upload,
@@ -23,6 +25,7 @@ import {
   CheckCircleOutlined,
   CloudUploadOutlined,
   CommentOutlined,
+  DeleteOutlined,
   EyeOutlined,
   FileTextOutlined,
   HeartOutlined,
@@ -38,12 +41,14 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { getComments } from '@/api/comment'
 import {
   addVideo,
+  changeVideoStatus,
   getUserWorks,
 } from '@/api/video'
 import { getDanmuList } from '@/api/comment'
 import { useChunkUpload } from '@/hooks/useChunkUpload'
 import { useAppSelector } from '@/store/hooks'
 import { handleDate, handleNum } from '@/utils/format'
+import { extractVideoFrames, type VideoFrame } from '@/utils/videoFrames'
 import type { Comment } from '@/types/comment'
 import type { Danmu } from '@/types/danmu'
 import type { User } from '@/types/user'
@@ -111,11 +116,14 @@ async function getDuration(file: File) {
 }
 
 function VideoUploadForm({ onSubmitted }: VideoUploadFormProps) {
-  const channels = useAppSelector((state) => state.content.channels)
+  const { channels, channelsLoading } = useAppSelector((state) => state.content)
   const { upload, cancel, reset, progress, status, error } = useChunkUpload()
   const [form] = Form.useForm<UploadValues>()
   const [video, setVideo] = useState<File | null>(null)
   const [cover, setCover] = useState<File | null>(null)
+  const [coverPreview, setCoverPreview] = useState('')
+  const [frames, setFrames] = useState<VideoFrame[]>([])
+  const [selectedFrameTime, setSelectedFrameTime] = useState<number | null>(null)
   const [hash, setHash] = useState('')
   const [duration, setDuration] = useState(0)
   const [submitting, setSubmitting] = useState(false)
@@ -134,16 +142,45 @@ function VideoUploadForm({ onSubmitted }: VideoUploadFormProps) {
     [channels],
   )
 
+  useEffect(() => {
+    if (!cover) {
+      setCoverPreview('')
+      return
+    }
+    const url = URL.createObjectURL(cover)
+    setCoverPreview(url)
+    return () => URL.revokeObjectURL(url)
+  }, [cover])
+
+  useEffect(
+    () => () => frames.forEach((frame) => URL.revokeObjectURL(frame.url)),
+    [frames],
+  )
+
   const selectVideo = async (file: File) => {
     setVideo(file)
+    setCover(null)
+    setFrames([])
+    setSelectedFrameTime(null)
     setHash('')
+    if (!form.getFieldValue('title')) {
+      form.setFieldValue('title', file.name.replace(/\.[^.]+$/, '').slice(0, 80))
+    }
     try {
-      const [nextDuration, nextHash] = await Promise.all([
+      const [nextDuration, nextHash, nextFrames] = await Promise.all([
         getDuration(file),
         upload(file),
+        extractVideoFrames(file, 4).catch(() => []),
       ])
       setDuration(nextDuration)
       setHash(nextHash)
+      setFrames(nextFrames)
+      if (nextFrames[0]) {
+        setCover(nextFrames[0].file)
+        setSelectedFrameTime(nextFrames[0].time)
+      } else {
+        message.info('当前浏览器未能读取视频画面，请上传自定义封面')
+      }
     } catch (reason) {
       if (!(reason instanceof DOMException && reason.name === 'AbortError')) {
         message.error(reason instanceof Error ? reason.message : '视频上传失败')
@@ -155,6 +192,8 @@ function VideoUploadForm({ onSubmitted }: VideoUploadFormProps) {
   const clearFiles = () => {
     setVideo(null)
     setCover(null)
+    setFrames([])
+    setSelectedFrameTime(null)
     setHash('')
     setDuration(0)
     reset()
@@ -261,23 +300,59 @@ function VideoUploadForm({ onSubmitted }: VideoUploadFormProps) {
             showSearch
             optionFilterProp="label"
             options={categoryOptions}
-            placeholder={categoryOptions.length ? '请选择内容分区' : '分区数据加载中'}
+            placeholder={channelsLoading ? '分区数据加载中...' : categoryOptions.length ? '请选择内容分区' : '分区加载失败，请刷新页面重试'}
+            disabled={!channelsLoading && categoryOptions.length === 0}
           />
         </Form.Item>
         <Form.Item name="tags" label="标签" rules={[{ required: true, message: '请输入至少一个标签' }]}>
           <Input placeholder="多个标签用逗号分隔" />
         </Form.Item>
         <Form.Item label="封面" required>
-          <Upload
-            accept="image/jpeg,image/png,image/webp"
-            maxCount={1}
-            beforeUpload={(file) => {
-              setCover(file)
-              return false
-            }}
-          >
-            <Button>选择封面图片</Button>
-          </Upload>
+          <div className="cover-editor">
+            <div className="cover-preview">
+              {coverPreview ? <img src={coverPreview} alt="当前视频封面" /> : (
+                <span>{video ? '正在从视频中提取画面…' : '选择视频后自动生成封面'}</span>
+              )}
+              {cover ? (
+                <small>
+                  {selectedFrameTime === null
+                    ? '自定义封面'
+                    : `视频 ${Math.round(selectedFrameTime)} 秒画面`}
+                </small>
+              ) : null}
+            </div>
+            <div className="cover-options">
+              <strong>从视频中选择</strong>
+              <div className="cover-frame-grid">
+                {frames.map((frame) => (
+                  <button
+                    key={frame.url}
+                    className={selectedFrameTime === frame.time ? 'active' : ''}
+                    type="button"
+                    onClick={() => {
+                      setCover(frame.file)
+                      setSelectedFrameTime(frame.time)
+                    }}
+                  >
+                    <img src={frame.url} alt={`${Math.round(frame.time)} 秒画面`} />
+                    <span>{Math.round(frame.time)}s</span>
+                  </button>
+                ))}
+              </div>
+              <Upload
+                accept="image/jpeg,image/png,image/webp"
+                maxCount={1}
+                showUploadList={false}
+                beforeUpload={(file) => {
+                  setCover(file)
+                  setSelectedFrameTime(null)
+                  return false
+                }}
+              >
+                <Button>上传自定义封面</Button>
+              </Upload>
+            </div>
+          </div>
         </Form.Item>
         <Form.Item name="descr" label="简介">
           <Input.TextArea rows={5} maxLength={2000} showCount />
@@ -369,9 +444,16 @@ function CreatorHome({ user, works }: { user: User | null; works: VideoFeedItem[
   )
 }
 
-function ManuscriptManager({ works }: { works: VideoFeedItem[] }) {
+function ManuscriptManager({
+  works,
+  onChanged,
+}: {
+  works: VideoFeedItem[]
+  onChanged: () => void
+}) {
   const [query, setQuery] = useState('')
   const [status, setStatus] = useState('all')
+  const [deleting, setDeleting] = useState<number | string | null>(null)
   const filtered = useMemo(
     () => works.filter((item) => {
       const matchesText = item.video.title.toLowerCase().includes(query.trim().toLowerCase())
@@ -441,8 +523,39 @@ function ManuscriptManager({ works }: { works: VideoFeedItem[] }) {
           {
             title: '操作',
             key: 'actions',
-            width: 120,
-            render: (_, item) => <Link to={`/video/${item.video.vid}`}><EyeOutlined /> 查看</Link>,
+            width: 170,
+            render: (_, item) => (
+              <Space>
+                <Link to={`/video/${item.video.vid}`}><EyeOutlined /> 查看</Link>
+                {Number(item.video.status) !== 3 ? (
+                  <Popconfirm
+                    title="确认删除这条稿件？"
+                    description="视频、封面及关联内容会被移除，此操作无法撤销。"
+                    okButtonProps={{ danger: true }}
+                    onConfirm={async () => {
+                      setDeleting(item.video.vid)
+                      try {
+                        await changeVideoStatus(item.video.vid, 3)
+                        message.success('稿件已删除')
+                        onChanged()
+                      } finally {
+                        setDeleting(null)
+                      }
+                    }}
+                  >
+                    <Button
+                      type="link"
+                      danger
+                      size="small"
+                      loading={deleting === item.video.vid}
+                      icon={<DeleteOutlined />}
+                    >
+                      删除
+                    </Button>
+                  </Popconfirm>
+                ) : null}
+              </Space>
+            ),
           },
         ]}
       />
@@ -659,7 +772,7 @@ export default function PlatformPage() {
     content = {
       home: <CreatorHome user={user} works={works} />,
       upload: <VideoUploadForm onSubmitted={loadWorks} />,
-      manuscript: <ManuscriptManager works={works} />,
+      manuscript: <ManuscriptManager works={works} onChanged={loadWorks} />,
       appeal: <AppealManager works={works} />,
       data: <CreatorAnalytics works={works} />,
       comment: <InteractionManager mode="comment" works={works} />,

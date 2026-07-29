@@ -16,11 +16,15 @@ export default function HeaderChannel() {
   const [compact, setCompact] = useState(false)
   const channels = useAppSelector((state) => state.content.channels)
   const user = useAppSelector((state) => state.user.current)
-  const channelLabels = useMemo(
+  const channelEntries = useMemo(
     () => channels.flatMap((channel) => [
-      channel.mcName,
-      ...(channel.children || []).map((child) => child.scName),
-    ]).filter(Boolean).slice(0, 22),
+      { key: `m-${channel.mcId}`, label: channel.mcName, to: `/channel/${channel.mcId}` },
+      ...(channel.children || []).map((child) => ({
+        key: `s-${channel.mcId}-${child.scId}`,
+        label: child.scName,
+        to: `/channel/${channel.mcId}/${child.scId}`,
+      })),
+    ]).filter((item) => item.label).slice(0, 22),
     [channels],
   )
 
@@ -34,9 +38,9 @@ export default function HeaderChannel() {
   return (
     <div className={`channel-row page-container ${compact ? 'channel-row--compact' : ''}`}>
       <div className="channel-shortcuts">
-        <Link to={user ? `/space/${user.uid}/dynamic` : '/search/video?keyword=动态'}>
+        <Link to={user ? `/space/${user.uid}/dynamic` : '/search/video?keyword=喜欢'}>
           <span className="shortcut-icon shortcut-icon--dynamic"><RadiusSettingOutlined /></span>
-          动态
+          喜欢
         </Link>
         <Link to="/search/video?keyword=热门">
           <span className="shortcut-icon shortcut-icon--popular"><FireFilled /></span>
@@ -44,12 +48,12 @@ export default function HeaderChannel() {
         </Link>
       </div>
       <div className="channel-grid">
-        {channelLabels.map((label) => (
-          <Link key={label} to={`/search/video?keyword=${encodeURIComponent(label)}`}>
-            {label}
+        {channelEntries.map((item) => (
+          <Link key={item.key} to={item.to}>
+            {item.label}
           </Link>
         ))}
-        {channelLabels.length === 0 ? <span className="channel-grid__loading">分区加载中…</span> : null}
+        {channelEntries.length === 0 ? <span className="channel-grid__loading">分区加载中…</span> : null}
       </div>
       <div className="channel-extra">
         <Link to="/search/video?keyword=专栏"><ReadOutlined />专栏</Link>

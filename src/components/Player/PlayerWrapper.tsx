@@ -8,16 +8,29 @@ interface PlayerWrapperProps {
   poster?: string
   title: string
   onTimeUpdate?: (time: number) => void
+  onPlay?: () => void
 }
 
-export default function PlayerWrapper({ src, poster, title, onTimeUpdate }: PlayerWrapperProps) {
+export default function PlayerWrapper({
+  src,
+  poster,
+  title,
+  onTimeUpdate,
+  onPlay,
+}: PlayerWrapperProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const playerRef = useRef<Player | null>(null)
   const timeUpdateRef = useRef(onTimeUpdate)
+  const playRef = useRef(onPlay)
+  const playedSourceRef = useRef('')
 
   useEffect(() => {
     timeUpdateRef.current = onTimeUpdate
   }, [onTimeUpdate])
+
+  useEffect(() => {
+    playRef.current = onPlay
+  }, [onPlay])
 
   useEffect(() => {
     if (!videoRef.current) return
@@ -28,10 +41,18 @@ export default function PlayerWrapper({ src, poster, title, onTimeUpdate }: Play
       sources: [],
     })
     const handleTime = () => timeUpdateRef.current?.(Number(player.currentTime() || 0))
+    const handlePlay = () => {
+      if (!playedSourceRef.current) {
+        playedSourceRef.current = String(player.currentSrc() || 'playing')
+        playRef.current?.()
+      }
+    }
     player.on('timeupdate', handleTime)
+    player.on('play', handlePlay)
     playerRef.current = player
     return () => {
       player.off('timeupdate', handleTime)
+      player.off('play', handlePlay)
       player.dispose()
       playerRef.current = null
     }
@@ -40,6 +61,7 @@ export default function PlayerWrapper({ src, poster, title, onTimeUpdate }: Play
   useEffect(() => {
     const player = playerRef.current
     if (!player) return
+    playedSourceRef.current = ''
     if (src) player.src({ src })
     if (poster) player.poster(poster)
   }, [poster, src])

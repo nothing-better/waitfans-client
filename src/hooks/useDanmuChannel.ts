@@ -2,6 +2,12 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { TOKEN_KEY } from '@/api/request'
 import type { Danmu } from '@/types/danmu'
 
+export interface DanmuStyle {
+  fontsize: 18 | 25
+  mode: 1 | 2 | 3
+  color: string
+}
+
 function danmuSocketUrl(vid: number | string) {
   const configured = import.meta.env.VITE_WS_DANMU_URL as string | undefined
   const base = configured
@@ -43,7 +49,7 @@ export function useDanmuChannel(
     }
   }, [vid])
 
-  const send = useCallback((content: string, timePoint: number) => {
+  const send = useCallback((content: string, timePoint: number, style?: DanmuStyle) => {
     const socket = socketRef.current
     const token = localStorage.getItem(TOKEN_KEY)
     if (!token || socket?.readyState !== WebSocket.OPEN) return false
@@ -52,9 +58,9 @@ export function useDanmuChannel(
       vid: Number(vid),
       data: {
         content,
-        fontsize: 25,
-        mode: 1,
-        color: '#FFFFFF',
+        fontsize: style?.fontsize ?? 25,
+        mode: style?.mode ?? 1,
+        color: style?.color ?? '#FFFFFF',
         timePoint,
       },
     }))

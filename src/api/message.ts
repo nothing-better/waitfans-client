@@ -9,6 +9,16 @@ export interface UnreadCounts {
   dynamic: number
 }
 
+export interface ChatMessage {
+  id: number
+  userId: number
+  anotherId: number
+  content: string
+  createTime: string
+  withdraw?: number
+  pending?: boolean
+}
+
 export interface ChatItem {
   chat: {
     id: number
@@ -23,14 +33,7 @@ export interface ChatItem {
   }
   detail: {
     more: boolean
-    list: Array<{
-      id: number
-      userId: number
-      anotherId: number
-      content: string
-      createTime: string
-      withdraw?: number
-    }>
+    list: ChatMessage[]
   }
 }
 
@@ -46,6 +49,15 @@ export const createChat = (uid: number | string) =>
   getData<ChatItem>(`/msg/chat/create/${uid}`)
 export const deleteChat = (uid: number | string) =>
   getData<unknown>(`/msg/chat/delete/${uid}`)
+export const getMoreChatDetails = (uid: number | string, offset: number) =>
+  getData<{ list: ChatMessage[]; more: boolean }>('/msg/chat-detailed/get-more', {
+    params: { uid, offset },
+  })
+export const deleteChatMessage = async (id: number | string) => {
+  const data = new FormData()
+  data.append('id', String(id))
+  await request.post('/msg/chat-detailed/delete', data)
+}
 export const setChatOnline = async (uid: number | string) => {
   await request.get('/msg/chat/online', { params: { from: uid } })
 }

@@ -11,6 +11,7 @@ import {
   Empty,
   Input,
   List,
+  Popconfirm,
   Spin,
   Switch,
   message,
@@ -19,6 +20,7 @@ import {
   BellOutlined,
   CheckOutlined,
   CommentOutlined,
+  DeleteOutlined,
   HeartOutlined,
   MessageOutlined,
   SearchOutlined,
@@ -31,6 +33,9 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import {
   clearUnread,
   createChat,
+  deleteChat,
+  deleteChatMessage,
+  getMoreChatDetails,
   getRecentChats,
   setChatOffline,
   setChatOnline,
@@ -39,6 +44,7 @@ import {
 import { useAppDispatch, useAppSelector } from '@/store/hooks'
 import { clearUnreadLocal, sendIm } from '@/store/slices/messageSlice'
 import { handleDate } from '@/utils/format'
+import type { ChatMessage } from '@/api/message'
 
 const navItems = [
   ['reply', '回复我的', <CommentOutlined key="reply" />],
@@ -51,6 +57,11 @@ const navItems = [
 
 type MessageSection = typeof navItems[number][0]
 type UnreadKey = Exclude<MessageSection, 'config'>
+
+function orderMessages(items: ChatMessage[]) {
+  return [...items].sort((left, right) =>
+    new Date(left.createTime).getTime() - new Date(right.createTime).getTime())
+}
 
 const notificationCopy: Record<Exclude<UnreadKey, 'whisper'>, {
   title: string
@@ -78,11 +89,14 @@ function ChatDialog({ chat }: { chat: ChatItem }) {
   const dispatch = useAppDispatch()
   const currentUser = useAppSelector((state) => state.user.current)
   const [content, setContent] = useState('')
-  const [messages, setMessages] = useState(chat.detail?.list || [])
+  const [messages, setMessages] = useState(orderMessages(chat.detail?.list || []))
+  const [moreMessages, setMoreMessages] = useState(Boolean(chat.detail?.more))
+  const [loadingMore, setLoadingMore] = useState(false)
   const messageEndRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    setMessages(chat.detail?.list || [])
+    setMessages(orderMessages(chat.detail?.list || []))
+    setMoreMessages(Boolean(chat.detail?.more))
     setChatOnline(chat.user.uid).catch(() => undefined)
     return () => {
       if (currentUser?.uid) {
@@ -114,9 +128,27 @@ function ChatDialog({ chat }: { chat: ChatItem }) {
         anotherId: targetUid,
         content: normalized,
         createTime: new Date().toISOString(),
+        pending: true,
       },
     ])
     setContent('')
+  }
+
+  const loadMoreMessages = async () => {
+    setLoadingMore(true)
+    try {
+      const result = await getMoreChatDetails(chat.user.uid, messages.length)
+      setMessages((current) => orderMessages([...(result?.list || []), ...current]))
+      setMoreMessages(Boolean(result?.more))
+    } finally {
+      setLoadingMore(false)
+    }
+  }
+
+  const removeMessage = async (id: number) => {
+    await deleteChatMessage(id)
+    setMessages((current) => current.filter((item) => item.id !== id))
+    message.success('消息已删除')
   }
 
   return (
@@ -126,6 +158,9 @@ function ChatDialog({ chat }: { chat: ChatItem }) {
         <div><strong>{chat.user.nickname}</strong><span>私信会话</span></div>
       </header>
       <div className="chat-messages">
+        {moreMessages ? (
+          <Button type="link" loading={loadingMore} onClick={loadMoreMessages}>加载更早消息</Button>
+        ) : null}
         {messages.length === 0 ? <Empty description="打个招呼，开始聊天吧" /> : null}
         {messages.map((item) => {
           const mine = Number(item.userId) === Number(currentUser?.uid)
@@ -134,7 +169,14 @@ function ChatDialog({ chat }: { chat: ChatItem }) {
               {!mine ? <Avatar src={chat.user.avatar_url} icon={<UserOutlined />} /> : null}
               <div>
                 <span>{item.withdraw ? '消息已撤回' : item.content}</span>
-                <time>{item.createTime ? handleDate(item.createTime) : ''}</time>
+                <div className="chat-bubble__meta">
+                  <time>{item.createTime ? handleDate(item.createTime) : ''}</time>
+                  {!item.pending ? (
+                    <Popconfirm title="删除这条消息？" onConfirm={() => removeMessage(item.id)}>
+                      <button type="button">删除</button>
+                    </Popconfirm>
+                  ) : <em>发送中</em>}
+                </div>
               </div>
             </div>
           )
@@ -332,6 +374,13 @@ export default function MessagePage() {
     dispatch(clearUnreadLocal(section))
   }
 
+  const removeConversation = async (uid: number) => {
+    await deleteChat(uid)
+    setChats((current) => current.filter((item) => Number(item.user.uid) !== Number(uid)))
+    if (Number(mid) === Number(uid)) navigate('/message/whisper')
+    message.success('会话已移除')
+  }
+
   let content
   if (active === 'whisper') {
     content = (
@@ -366,6 +415,17 @@ export default function MessagePage() {
                   />
                   <time>{item.chat.latestTime ? handleDate(item.chat.latestTime) : ''}</time>
                   {item.chat.unread > 0 ? <em>{item.chat.unread}</em> : null}
+                  <Popconfirm title={`移除与 ${item.user.nickname} 的会话？`} onConfirm={() => removeConversation(item.user.uid)}>
+                    <Button
+                      className="chat-delete"
+                      type="text"
+                      size="small"
+                      danger
+                      aria-label={`移除与 ${item.user.nickname} 的会话`}
+                      icon={<DeleteOutlined />}
+                      onClick={(event) => event.stopPropagation()}
+                    />
+                  </Popconfirm>
                 </List.Item>
               )
             }}

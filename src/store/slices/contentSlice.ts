@@ -4,13 +4,14 @@ import { getChannels, getHotSearch, type Channel } from '@/api/content'
 interface ContentState {
   channels: Channel[]
   trendings: string[]
+  channelsLoading: boolean
 }
 
-const initialState: ContentState = { channels: [], trendings: [] }
+const initialState: ContentState = { channels: [], trendings: [], channelsLoading: true }
 
 export const fetchContentNavigation = createAsyncThunk('content/navigation', async () => {
   const [channels, trendings] = await Promise.all([
-    getChannels().catch(() => []),
+    getChannels(),
     getHotSearch().catch(() => []),
   ])
   return { channels, trendings }
@@ -21,10 +22,18 @@ const contentSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchContentNavigation.fulfilled, (state, action) => {
-      state.channels = action.payload.channels
-      state.trendings = action.payload.trendings
-    })
+    builder
+      .addCase(fetchContentNavigation.pending, (state) => {
+        state.channelsLoading = true
+      })
+      .addCase(fetchContentNavigation.fulfilled, (state, action) => {
+        state.channels = action.payload.channels
+        state.trendings = action.payload.trendings
+        state.channelsLoading = false
+      })
+      .addCase(fetchContentNavigation.rejected, (state) => {
+        state.channelsLoading = false
+      })
   },
 })
 

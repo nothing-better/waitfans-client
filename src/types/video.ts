@@ -13,8 +13,11 @@ export interface Video {
   tags?: string
   type?: number
   auth?: number
+  mcId?: string
+  scId?: string
   status?: number
   top?: number
+  deleteDate?: string
 }
 
 export interface VideoStats {
@@ -31,6 +34,18 @@ export interface VideoFeedItem {
   video: Video
   user: User
   stats: VideoStats
+  category?: {
+    mcId?: string | number
+    mcName?: string
+    scId?: string | number
+    scName?: string
+  }
+  info?: {
+    id?: number
+    fid?: number
+    vid?: number
+    time?: string
+  }
 }
 
 export interface VideoDetailData extends VideoFeedItem {

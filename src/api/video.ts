@@ -29,6 +29,8 @@ export const getUserLovedVideos = (
   quantity = 30,
 ) =>
   getData<VideoFeedItem[]>('/video/user-love', { params: { uid, offset, quantity } })
+export const getUserPlayedVideos = (offset = 0, quantity = 30) =>
+  getData<VideoFeedItem[]>('/video/user-play', { params: { offset, quantity } })
 export const getUserCollectedVideos = (
   fid: number | string,
   page = 1,
@@ -43,6 +45,22 @@ export const toggleVideoLove = (data: FormData) =>
     '/video/love-or-not',
     data,
   )
+export const recordVideoPlay = (vid: number | string, authenticated: boolean) => {
+  const data = new FormData()
+  data.append('vid', String(vid))
+  return postData<{
+    love?: number
+    unlove?: number
+    play?: number
+    collect?: number
+  }>(authenticated ? '/video/play/user' : '/video/play/visitor', data)
+}
+export const changeVideoStatus = (vid: number | string, status: number) => {
+  const data = new FormData()
+  data.append('vid', String(vid))
+  data.append('status', String(status))
+  return postData<unknown>('/video/change/status', data)
+}
 export const addVideo = (data: FormData) => postData<unknown>('/video/add', data)
 export const askChunk = (hash: string) =>
   getData<number | boolean>('/video/ask-chunk', { params: { hash } })

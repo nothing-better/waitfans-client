@@ -168,7 +168,7 @@ export default function SpacePage() {
                   <button
                     key={favorite.fid}
                     type="button"
-                    onClick={() => navigate(`/space/${uid}/favlist?fid=${favorite.fid}`)}
+                    onClick={() => navigate(`/space/${uid}/favorite/${favorite.fid}`)}
                   >
                     <div>{favorite.cover ? <img src={favorite.cover} alt="" /> : '收藏夹'}</div>
                     <strong>{favorite.title}</strong>

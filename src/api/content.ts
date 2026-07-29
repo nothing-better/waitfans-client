@@ -19,6 +19,8 @@ export interface Favorite {
   uid: number
   title: string
   type: number
+  visible?: number
+  description?: string
   count?: number
   cover?: string
 }
@@ -49,3 +51,33 @@ export const getFavorites = (uid: number | string, authenticated: boolean) =>
   getData<Favorite[]>(authenticated ? '/favorite/get-all/user' : '/favorite/get-all/visitor', {
     params: { uid },
   })
+
+export const getCollectedFids = (vid: number | string) =>
+  getData<number[]>('/video/collected-fids', { params: { vid } })
+
+export const updateVideoCollections = (
+  vid: number | string,
+  adds: number[],
+  removes: number[],
+) => {
+  const body = new FormData()
+  body.append('vid', String(vid))
+  adds.forEach((fid) => body.append('adds', String(fid)))
+  removes.forEach((fid) => body.append('removes', String(fid)))
+  return postData<unknown>('/video/collect', body)
+}
+
+export const cancelVideoCollection = (vid: number | string, fid: number | string) => {
+  const body = new FormData()
+  body.append('vid', String(vid))
+  body.append('fid', String(fid))
+  return postData<unknown>('/video/cancel-collect', body)
+}
+
+export const createFavorite = (title: string, description: string, visible: number) => {
+  const body = new FormData()
+  body.append('title', title)
+  body.append('desc', description)
+  body.append('visible', String(visible))
+  return postData<Favorite>('/favorite/create', body)
+}

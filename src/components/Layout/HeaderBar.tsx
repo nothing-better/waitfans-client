@@ -88,6 +88,7 @@ export default function HeaderBar() {
     () => ({
       items: [
         { key: 'space', label: <Link to={`/space/${user?.uid ?? ''}`}>个人空间</Link> },
+        { key: 'history', label: <Link to="/history">观看历史</Link> },
         { key: 'account', label: <Link to="/account/home">账号设置</Link> },
         {
           key: 'logout',
@@ -162,7 +163,7 @@ export default function HeaderBar() {
         </Popover>
         <div className="site-actions">
           {authenticated ? (
-            <Dropdown menu={userMenu} trigger={['click']}>
+            <Dropdown menu={userMenu} trigger={['click']} getPopupContainer={(trigger) => trigger.parentElement!}>
               <div className="site-avatar-wrapper">
                 <Avatar
                   className="site-avatar"
@@ -199,7 +200,7 @@ export default function HeaderBar() {
             }}
           >
             <PlayCircleOutlined />
-            <span>动态</span>
+            <span>喜欢</span>
           </Link>
           <Link
             className="header-action optional-action"
@@ -214,7 +215,16 @@ export default function HeaderBar() {
             <StarOutlined />
             <span>收藏</span>
           </Link>
-          <Link className="header-action optional-action" to="/search/video?keyword=历史">
+          <Link
+            className="header-action optional-action"
+            to={authenticated ? '/history' : '/'}
+            onClick={(event) => {
+              if (!authenticated) {
+                event.preventDefault()
+                setLoginOpen(true)
+              }
+            }}
+          >
             <ClockCircleOutlined />
             <span>历史</span>
           </Link>
