@@ -58,6 +58,7 @@ export interface VideoDetailData extends VideoFeedItem {
 }
 
 export interface CarouselItem {
+  id?: number
   url: string
   title: string
   color: string

@@ -18,10 +18,11 @@ export default function PlayerWrapper({
   onTimeUpdate,
   onPlay,
 }: PlayerWrapperProps) {
-  const videoRef = useRef<HTMLVideoElement>(null)
+  const playerContainerRef = useRef<HTMLDivElement>(null)
   const playerRef = useRef<Player | null>(null)
   const timeUpdateRef = useRef(onTimeUpdate)
   const playRef = useRef(onPlay)
+  const titleRef = useRef(title)
   const playedSourceRef = useRef('')
 
   useEffect(() => {
@@ -33,8 +34,21 @@ export default function PlayerWrapper({
   }, [onPlay])
 
   useEffect(() => {
-    if (!videoRef.current) return
-    const player = videojs(videoRef.current, {
+    titleRef.current = title
+    playerRef.current?.el().setAttribute('aria-label', title)
+  }, [title])
+
+  useEffect(() => {
+    const container = playerContainerRef.current
+    if (!container) return
+
+    const videoElement = document.createElement('video-js')
+    videoElement.classList.add('video-js', 'vjs-big-play-centered')
+    videoElement.setAttribute('playsinline', '')
+    videoElement.setAttribute('aria-label', titleRef.current)
+    container.appendChild(videoElement)
+
+    const player = videojs(videoElement, {
       controls: true,
       fluid: true,
       preload: 'auto',
@@ -54,6 +68,7 @@ export default function PlayerWrapper({
       player.off('timeupdate', handleTime)
       player.off('play', handlePlay)
       player.dispose()
+      videoElement.remove()
       playerRef.current = null
     }
   }, [])
@@ -62,18 +77,13 @@ export default function PlayerWrapper({
     const player = playerRef.current
     if (!player) return
     playedSourceRef.current = ''
-    if (src) player.src({ src })
-    if (poster) player.poster(poster)
+    player.src(src ? { src, type: 'video/mp4' } : [])
+    player.poster(poster || '')
   }, [poster, src])
 
   return (
     <div className="player-shell">
-      <video
-        ref={videoRef}
-        className="video-js vjs-big-play-centered"
-        playsInline
-        aria-label={title}
-      />
+      <div data-vjs-player ref={playerContainerRef} />
       {!src ? <div className="player-empty">视频资源暂不可用</div> : null}
     </div>
   )

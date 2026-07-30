@@ -1,6 +1,6 @@
 import { getData, postData } from './request'
 import type { User, UserCardData } from '@/types/user'
-import type { VideoFeedItem } from '@/types/video'
+import type { CarouselItem, VideoFeedItem } from '@/types/video'
 
 export interface Channel {
   mcId: number
@@ -26,6 +26,7 @@ export interface Favorite {
 }
 
 export const getChannels = () => getData<Channel[]>('/category/getall')
+export const getCarousel = () => getData<CarouselItem[]>('/carousel/list')
 export const toTrendingKeywords = (items: HotSearch[]) =>
   items.map(({ content }) => content).filter(Boolean)
 export const getHotSearch = async () =>

@@ -4,13 +4,15 @@ import { Button, Empty } from 'antd'
 import HeaderChannel from '@/components/Layout/HeaderChannel'
 import CarouselBanner from '@/components/Carousel/CarouselBanner'
 import VideoCard from '@/components/VideoCard/VideoCard'
+import { getCarousel } from '@/api/content'
 import { getCumulativeVideos, getRandomVideos } from '@/api/video'
-import type { VideoFeedItem } from '@/types/video'
+import type { CarouselItem, VideoFeedItem } from '@/types/video'
 
 const HOME_ASSET_ROOT = '/assets/bilibili-home'
 
 export default function IndexPage() {
   const [videos, setVideos] = useState<VideoFeedItem[]>([])
+  const [carousel, setCarousel] = useState<CarouselItem[]>([])
   const [excludedIds, setExcludedIds] = useState<number[]>([])
   const [loading, setLoading] = useState(true)
   const [more, setMore] = useState(true)
@@ -21,9 +23,13 @@ export default function IndexPage() {
     setLoading(true)
     setError('')
     try {
-      const result = await getRandomVideos()
+      const [result, carouselItems] = await Promise.all([
+        getRandomVideos(),
+        getCarousel().catch(() => []),
+      ])
       const nextVideos = result || []
       setVideos(nextVideos)
+      setCarousel(carouselItems || [])
       setExcludedIds(
         nextVideos
           .map((item) => Number(item.video.vid))
@@ -94,14 +100,14 @@ export default function IndexPage() {
         </section>
       ) : videos.length > 0 ? (
         <section className="feed-layout page-container">
-          <CarouselBanner items={videos.slice(0, 5)} />
-          {videos.slice(5, 11).map((item) => (
+          {carousel.length > 0 ? <CarouselBanner items={carousel} /> : null}
+          {videos.slice(0, 6).map((item) => (
             <VideoCard key={item.video.vid} item={item} />
           ))}
           <button className="refresh-feed" type="button" onClick={loadRandom}>
             <ReloadOutlined /> 换一换
           </button>
-          {videos.slice(11).map((item) => (
+          {videos.slice(6).map((item) => (
             <VideoCard key={item.video.vid} item={item} />
           ))}
         </section>

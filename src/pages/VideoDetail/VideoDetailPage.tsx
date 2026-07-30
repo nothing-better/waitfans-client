@@ -27,6 +27,7 @@ import VideoCard from '@/components/VideoCard/VideoCard'
 import { useAppSelector } from '@/store/hooks'
 import { useDanmuChannel, type DanmuStyle } from '@/hooks/useDanmuChannel'
 import { handleDate, handleNum } from '@/utils/format'
+import { getVideoPlaybackUrl } from '@/utils/media'
 import type { Danmu } from '@/types/danmu'
 import type { VideoDetailData, VideoFeedItem } from '@/types/video'
 
@@ -195,7 +196,7 @@ export default function VideoDetailPage() {
           </div>
           <div className="player-stage">
             <PlayerWrapper
-              src={detail.video.videoUrl}
+              src={getVideoPlaybackUrl(detail.video.vid)}
               poster={detail.video.coverUrl || detail.video.cover}
               title={detail.video.title}
               onTimeUpdate={setCurrentTime}
