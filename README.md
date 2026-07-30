@@ -52,6 +52,10 @@ npm run dev -- --host 127.0.0.1 --port 8787 --strictPort
 
 前端、管理端和后端分别是独立 Git 仓库。请在各自目录中安装依赖、提交变更和执行测试；前端接口契约发生变化时，必须同步更新并验证后端。
 
+仓库的 `.nvmrc` 固定推荐使用已验证的 Node.js 22.23.1，`package.json` 声明了
+最低版本要求，npm 安装时会提示不兼容的工具链。使用 nvm-windows 时可执行
+`nvm use 22.23.1`。
+
 ## 2. 安装依赖
 
 在本仓库根目录执行：
@@ -68,9 +72,9 @@ npm ci
 
 ## 3. 环境配置
 
-本地开发推荐不创建 `.env.local`。此时所有 HTTP 请求使用 `/api` 相对路径，由 Vite 转发到 `http://localhost:7070`，可避免跨域问题。
+本地开发推荐不创建 `.env.local`。此时所有 HTTP 请求使用 `/api` 相对路径，由 Vite 转发到 `http://127.0.0.1:7070`，可避免跨域问题。
 
-如需让浏览器直接访问后端，可复制示例配置：
+如需显式保存本机配置，可复制示例配置：
 
 ```powershell
 Copy-Item .env.example .env.local
@@ -79,14 +83,17 @@ Copy-Item .env.example .env.local
 `.env.example` 的默认值为：
 
 ```dotenv
-VITE_API_BASE_URL=http://localhost:7070
-VITE_WS_IM_URL=ws://localhost:7071
+VITE_API_BASE_URL=/api
+VITE_WS_IM_URL=ws://127.0.0.1:7071
+VITE_WS_DANMU_URL=ws://127.0.0.1:7070
 ```
 
 说明：
 
-- `VITE_API_BASE_URL` 不要追加 `/api`，后端接口本身从 `/user`、`/search` 等路径开始。
+- `/api` 使用 Vite 开发代理；若改为直接访问后端，应填写
+  `http://127.0.0.1:7070`，不要再追加 `/api`。
 - `VITE_WS_IM_URL` 不要追加 `/im`，客户端连接时会自动补上该路径。
+- `VITE_WS_DANMU_URL` 不要追加 `/ws/danmu`，客户端会自动补上完整路径。
 - `.env.local` 仅用于本机，不应提交到 Git。
 - 修改环境文件后必须重启 Vite。
 

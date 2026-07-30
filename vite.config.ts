@@ -16,16 +16,18 @@ export default defineConfig({
     },
   },
   server: {
+    host: '127.0.0.1',
     port: 8787,
+    strictPort: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:7070',
+        target: 'http://127.0.0.1:7070',
         changeOrigin: true,
         ws: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
       '/ws': {
-        target: 'ws://localhost:7070',
+        target: 'ws://127.0.0.1:7070',
         ws: true,
       },
     },
